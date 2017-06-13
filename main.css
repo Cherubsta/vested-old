@@ -1,6 +1,6 @@
 body {
   background-color:#000000;
-  color: #b3b3b3;
+  color: #ffffff;
   font-family: 'Helvetica', 'Helvetica Neue', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Arial', 'Lucida Grande', 'sans-serif';
 }
 html, body {
@@ -66,6 +66,8 @@ a:hover {
   width: 100%;
   top: -215;
   position: relative;
+  position: relative;
+  z-index: -1;
   /*background-image: url("https://s3.us-east-2.amazonaws.com/silotrainer-new/hero.png");
   background-size: cover;
   display: block;
