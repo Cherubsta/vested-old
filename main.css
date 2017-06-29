@@ -9,7 +9,7 @@ html, body {
 h1 {
   font-family: 'Helvetica Neue', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica', 'Arial', 'Lucida Grande', 'sans-serif';
 	font-size: 40px;
-  font-weight: lighter;
+  font-weight: normal;
   margin-bottom: 40px;
   margin-top: 20px;
   line-height: 1.00;
@@ -66,8 +66,6 @@ a:hover {
   width: 100%;
   top: -125;
   position: relative;
-  position: relative;
-  z-index: -1;
   /*background-image: url("https://s3.us-east-2.amazonaws.com/silotrainer-new/hero.png");
   background-size: cover;
   display: block;
@@ -175,6 +173,7 @@ a:hover {
 .img-appstore {
   width: 150;
   margin-top: 20px;
+  margin-bottom: 20px
 }
 .img-float-right {
   float: right;
@@ -288,6 +287,22 @@ a:hover {
   display: none;
 }
 
+.button-glow:hover {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 30px 0px #FFE545;
+  -moz-box-shadow:    0px 0px 30px 0px #FFE545;
+  box-shadow:         0px 0px 30px 0px #FFE545;
+}
+.button-glow:last-of-type:hover {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 30px 0px #FFE545;
+  -moz-box-shadow:    0px 0px 30px 0px #FFE545;
+  box-shadow:         0px 0px 30px 0px #FFE545;
+}
 
 @media(max-width: 800px) { /* for devies under 600px width, iPhone 6+ */
   h1 {
