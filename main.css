@@ -46,15 +46,15 @@ li {
   margin-bottom: 20px;
 }
 a {
-	color: #FFE545;
+	color: #FFED7D;
 	text-decoration: none;
 }
 a, a:visited, a:hover, a:active {
-  color: #FFE545;
+  color: #FFED7D;
   /*text-decoration: none;*/
 }
 a:hover {
-  color: #FFE545;
+  color: #FFED7D;
   /*font-weight: bolder;*/
 }
 .container {
@@ -291,17 +291,17 @@ a:hover {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  -webkit-box-shadow: 0px 0px 30px 0px #FFE545;
-  -moz-box-shadow:    0px 0px 30px 0px #FFE545;
-  box-shadow:         0px 0px 30px 0px #FFE545;
+  -webkit-box-shadow: 0px 0px 30px 0px #FFED7D;
+  -moz-box-shadow:    0px 0px 30px 0px #FFED7D;
+  box-shadow:         0px 0px 30px 0px #FFED7D;
 }
 .button-glow:last-of-type:hover {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  -webkit-box-shadow: 0px 0px 30px 0px #FFE545;
-  -moz-box-shadow:    0px 0px 30px 0px #FFE545;
-  box-shadow:         0px 0px 30px 0px #FFE545;
+  -webkit-box-shadow: 0px 0px 30px 0px #FFED7D;
+  -moz-box-shadow:    0px 0px 30px 0px #FFED7D;
+  box-shadow:         0px 0px 30px 0px #FFED7D;
 }
 
 @media(max-width: 800px) { /* for devies under 600px width, iPhone 6+ */
