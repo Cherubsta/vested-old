@@ -1,29 +1,21 @@
-body {
-  background-color:#FFFFFF;
-  color: #b3b3b3;
-  font-family: 'Helvetica Neue', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica', 'Arial', 'Lucida Grande', 'sans-serif';
+  body {
+  /* background-color:#FFFFFF; */
+  /* background-image: repeating-linear-gradient(); */
+  color: #FFF;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif, 'Helvetica Neue', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica', 'Arial', 'Lucida Grande', 'sans-serif';
+
+  background-image: url(https://s3-us-west-2.amazonaws.com/vested/background-grad.png);
+  background-repeat: repeat-x;
 }
-html, body {
-    height: 100%; /*zen*/
-}
+
 h1 {
-  font-family: 'Helvetica Neue', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica', 'Arial', 'Lucida Grande', 'sans-serif';
-	font-size: 40px;
-  font-weight: normal;
-  margin-bottom: 40px;
-  margin-top: 20px;
-  line-height: 1.00;
+
 }
 h2 {
-	font-size: 20px;
-	font-weight: 700;
-	margin-top: 0;
-  margin-bottom: 0;
+
 }
 p {
-	font-size: 20px;
-	font-weight: 100;
-  margin-bottom: 30px;
+  font-size: 20px;
 }
 
 a {
@@ -39,9 +31,9 @@ a:hover {
   /*font-weight: bolder;*/
 }
 .container {
-  /* max-width: 920;
-  margin: 0 auto;
-  text-align: center */
+  max-width: 900px;
+  /* margin: 0 auto;
+  text-align: center; */
 }
 
 .div-center {
@@ -53,6 +45,34 @@ a:hover {
 .div-aligntext {
   text-align: left;
 }
+
+.img-heading {
+  display: block;
+  height: 3em;
+  padding-top: 0.3em;
+  background-color: #FFF;
+  background-image: url(https://s3-us-west-2.amazonaws.com/vested/logo-vested.png);
+  background-repeat: no-repeat;
+  background-size: 100px;
+  background-position: center;
+}
+.img-icons {
+  height: 3em;
+  padding-top: 6em;
+  background-image: url(https://s3-us-west-2.amazonaws.com/vested/icons.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+.hero{
+  margin-top: -10px;
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+	font-size: 46px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 900;
+}
+
 
 @media(max-width: 800px) { /* for devies under 600px width, iPhone 6+ */
   h1 {
