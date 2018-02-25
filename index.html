@@ -1,19 +1,20 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="A savings plan, right in your pocket">
-    <meta name="keywords" content="savings, investment, save money, savings goal, savings plan">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <link rel="shortcut icon" href="https://s3-us-west-2.amazonaws.com/vested/favicon.png">
-    <title>vested</title>
-  </head>
-  <body>
-    <div class="img-heading"></div>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="A savings plan, right in your pocket">
+  <meta name="keywords" content="savings, investment, save money, savings goal, savings plan">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="shortcut icon" href="https://s3-us-west-2.amazonaws.com/vested/favicon.png">
+  <title>vested</title>
+</head>
+<body>
+  <div class="img-heading sticky-top"></div>
+  <div class="backgradient">
     <div class="container">
       <div class="img-icons"></div>
       <div class="row">
@@ -24,20 +25,80 @@
           <p style="margin-top: 2em;">
             <i>vested</i> learns your finances, and sets you on a path to optimal savings
           </p>
-          <p>
-            <br>The smart goal tracker keeps your spending in check and keeps you mindful of where you are vs. where you should be
+          <p style="margin-top: 1em;">
+            The smart goal tracker keeps your spending in check and keeps you mindful of where you are vs. where you should be
           </p>
+          <div class="">
+            <p style="font-weight:600; padding-top: 1em;">
+              Sign up free, for early access
+            </p>
+            <p id="signup-success" class="text-success"></p>
+            <p id="signup-error" class="text-danger"></p>
+            <form class="signup-form form-inline" id="signup-form" role="form" onsubmit="return signup(this)">
+              <input class="form-control" id="email" name="email" type="email" placeholder="Email address" required style="width: 80%; height: 48px; border: none; border-radius: 7px;">
+              <!-- <button class="btn btn-success" id="signup-button" type="submit" > -> </button> -->
+              <button class="btn btn-success" id="signup-button" type="submit" style="background-color: transparent; border:none">
+                <img src="https://s3-us-west-2.amazonaws.com/vested/emailbutton.png" width="40" />
+              </button>
+            </form>
+          </div>
         </div>
         <div class="col">
-          <img class="center" src="https://s3-us-west-2.amazonaws.com/vested/savingsgoal.png" alt="Lamp" height="500">
+          <img class="center" src="https://s3-us-west-2.amazonaws.com/vested/savingsgoal.png" alt="Lamp" height="480">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col text-center spacing-top spacing-bottom font-lt">
+          Learn more <img src="https://s3-us-west-2.amazonaws.com/vested/arrowdown.png" alt="Lamp" height="10em" style="padding-left: 4px">
         </div>
       </div>
     </div>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <img class="center spacing-top" src="https://s3-us-west-2.amazonaws.com/vested/monthlycategory.png" alt="Lamp" height="480">
+        <div class="text-center hero-blue">
+          Follow your money
+        </div>
+        <p class="center text-center font-blue" style="margin-top: 2em; max-width: 80%;">
+          See where your money goes each month with simple category bins—recategorize as needed, keep an eye on spending trends and find out where there’s room to improve
+        </p>
+      </div>
+    </div>
+    <div class="img-icons"></div>
+    <div class="row">
+      <div class="col">
+        <img class="center spacing-top" src="https://s3-us-west-2.amazonaws.com/vested/wheelhouse.png" alt="Lamp" height="380">
+        <div class="text-center hero-blue">
+          Save up for ___________.
+        </div>
+        <p class="center text-center font-blue" style="margin-top: 2em; max-width: 80%;">
+          Whether you’re saving for something big or a rainy day, it can be challenging to track your expenses and to stick to a savings goal—Fund keeps you mindful of your money, so you can maximize your savings and keep your eye on the prize
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="backgradient" style="height: 340px; margin-top: 3em;">
+    <nav class="nav justify-content-center spacing-top">
+      <a class="nav-link active" href="#">About Us</a>
+      <a class="nav-link" href="#">Methodology</a>
+      <a class="nav-link" href="#">Terms</a>
+      <a class="nav-link" href="#">Press</a>
+      <a class="nav-link" href="#">Contact</a>
+      <a class="nav-link" href="#">Get vested</a>
+    </nav>
+  </div>
+  <div class="footer-copyright py-3 text-center">
+    <div class="container-fluid font-lt">
+      © vested 2018
+    </div>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://cdn.firebase.com/js/client/1.0.18/firebase.js"></script>
+</body>
 </html>
