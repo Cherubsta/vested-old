@@ -94,11 +94,49 @@
       © vested 2018
     </div>
   </div>
+  <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyA_3Bk88UD2McsPB4gwHW-lH9IVXow4SYE",
+      authDomain: "vested-11d32.firebaseapp.com",
+      databaseURL: "https://vested-11d32.firebaseio.com",
+      projectId: "vested-11d32",
+      storageBucket: "vested-11d32.appspot.com",
+      messagingSenderId: "885759988335"
+    };
+    firebase.initializeApp(config);
+  </script>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script src="https://cdn.firebase.com/js/client/1.0.18/firebase.js"></script>
+  <script>
+  var signupForm = document.getElementById('signup-form');
+  var signupSuccess = document.getElementById('signup-success');
+  var signupError = document.getElementById('signup-error');
+  var signupBtn = document.getElementById('signup-button');
+  var onSignupComplete = function(error) {
+    signupBtn.disabled = false;
+    if (error) {
+      signupError.innerHTML = 'Sorry. Could not signup.';
+    } else {
+      signupSuccess.innerHTML = 'Thanks for signing up!';
+      // hide the form
+      signupForm.style.display = 'none';
+    }
+  };
+  function signup(formObj) {
+    // Store emails to firebase
+    var myFirebaseRef = new Firebase("https://vested-11d32.firebaseio.com/");
+    myFirebaseRef.push({
+      email: formObj.email.value,
+    }, onSignupComplete);
+    signupBtn.disabled = true;
+    return false;
+  }
+</script>
 </body>
 </html>
