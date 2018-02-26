@@ -23,22 +23,23 @@
             Put your Savings on Autopilot
           </div>
           <p style="margin-top: 2em;">
-            <i>vested</i> learns your finances, and sets you on a path to optimal savings
+            Saving should be simple, <i>vested</i> lets you set a reasonable goal and shows you the path forward
           </p>
           <p style="margin-top: 1em;">
-            The smart goal tracker keeps your spending in check and keeps you mindful of where you are vs. where you should be
+            Smart goal tracking keeps you mindful of your earnings and and where you need to be, to stay on target
           </p>
           <div class="">
-            <p style="font-weight:600; padding-top: 1em;">
-              Sign up free, for early access
-            </p>
-            <p id="signup-success" class="text-success"></p>
-            <p id="signup-error" class="text-danger"></p>
+            <div style="font-weight:500; padding-top: 1em;">
+              Get notified when <i>vested</i> is available:
+            </div>
+            <h5><span id="signup-success" class="badge badge-primary"></span></h5>
+            <h5><span id="signup-error" class="badge badge-danger"></span></h5>
             <form class="signup-form form-inline spacing-bottom" id="signup-form" role="form" onsubmit="return signup(this)">
               <input class="form-control" id="email" name="email" type="email" placeholder="Email address" required style="width: 80%; height: 48px; border: none; border-radius: 7px;">
               <!-- <button class="btn btn-success" id="signup-button" type="submit" > -> </button> -->
               <button class="btn btn-success" id="signup-button" type="submit" style="background-color: transparent; border:none">
-                <img src="https://s3-us-west-2.amazonaws.com/vested/emailbutton.png" width="40" />
+                <img class="visible" src="https://s3-us-west-2.amazonaws.com/vested/emailbutton.png" width="40" />
+                <img class="hidden" src="https://s3-us-west-2.amazonaws.com/vested/emailbuttongo.png" width="40" />
               </button>
             </form>
           </div>
@@ -55,63 +56,58 @@
     </div>
   </div>
   <div class="container">
-    <div class="row">
-      <div class="col">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center">
         <img class="center spacing-top" src="https://s3-us-west-2.amazonaws.com/vested/monthlycategory.png" alt="Lamp" height="480">
         <div class="text-center hero-blue">
           Follow your money
         </div>
-        <p class="center text-center font-blue" style="margin-top: 2em; max-width: 80%;">
-          See where your money goes each month with simple category bins—recategorize as needed, keep an eye on spending trends and find out where there’s room to improve
+        <p class="center text-center font-blue" style="margin-top: 2em;">
+          View monthly snapshots of your income and expenses, auto-categorized, to help you stay mindful of how much you are spending and discover where there’s room to improve
         </p>
       </div>
     </div>
-    <div class="img-icons"></div>
-    <div class="row">
-      <div class="col">
+    <div class="img-icons" style="margin-top: 2em; margin-bottom: 2em;"></div>
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center">
         <img class="center spacing-top" src="https://s3-us-west-2.amazonaws.com/vested/wheelhouse.png" alt="Lamp" height="380">
-        <div class="text-center hero-blue">
-          Save up for ___________.
+        <div class="text-center hero-blue d-none d-md-block">
+          <div>Save up to</div>
+          <span class="txt-rotate" data-period="2000" data-rotate='[ "____________.", "make a big purchase.", "settle high interest debt.", "establish a safety net.", "pay off student loans.", "take a needed vacation.", "retire early.", "plan for your family.", "your full potential!" ]'></span>
         </div>
-        <p class="center text-center font-blue" style="margin-top: 2em; margin-bottom: 4em; max-width: 80%;">
-          Whether you’re saving for something big or a rainy day, it can be challenging to track your expenses and to stick to a savings goal—Fund keeps you mindful of your money, so you can maximize your savings and keep your eye on the prize
+        <div class="text-center hero-blue-small d-md-none d-lg-none d-xl-none">
+          <div>Save up to</div>
+          <span class="txt-rotate" data-period="2000" data-rotate='[ "____________.", "make a big purchase.", "settle high interest debt.", "establish a safety net.", "pay off student loans.", "take a needed vacation.", "retire early.", "plan for your family.", "your full potential!" ]'></span>
+        </div>
+        <p class="center text-center font-blue" style="margin-top: 1em; margin-bottom: 4em;">
+          Whether you’re saving for something big or a rainy day, it can be challenging to stick to a savings goal— <i>vested</i> keeps you mindful of your earnings, so you can optimize your savings and keep your eye on the prize
         </p>
       </div>
     </div>
   </div>
   <div class="backgradient" style="height: 340px; margin-top: 3em;">
-    <nav class="nav justify-content-center spacing-top">
-      <a class="nav-link active" href="#">About Us</a>
+    <nav class="nav justify-content-center">
       <a class="nav-link" href="#">Methodology</a>
       <a class="nav-link" href="#">Terms</a>
       <a class="nav-link" href="#">Press</a>
       <a class="nav-link" href="#">Contact</a>
-      <a class="nav-link" href="#">Get vested</a>
     </nav>
-  </div>
-  <div class="footer-copyright py-3 text-center">
-    <div class="container-fluid font-lt">
-      © vested 2018
+    <div class="container">
+      <div class="img-icons" style="margin-top: 3em"></div>
     </div>
   </div>
-  <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
-  <script>
-    // Initialize Firebase
-    var config = {
-      apiKey: "AIzaSyA_3Bk88UD2McsPB4gwHW-lH9IVXow4SYE",
-      authDomain: "vested-11d32.firebaseapp.com",
-      databaseURL: "https://vested-11d32.firebaseio.com",
-      projectId: "vested-11d32",
-      storageBucket: "vested-11d32.appspot.com",
-      messagingSenderId: "885759988335"
-    };
-    firebase.initializeApp(config);
-  </script>
+  <div class="footer-copyright py-3 text-left">
+    <div class="container-fluid font-lt">
+      <span style="font-size: 12px">© vested 2018</span>
+    </div>
+  </div>
+
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
   <script src="https://cdn.firebase.com/js/client/1.0.18/firebase.js"></script>
   <script>
   var signupForm = document.getElementById('signup-form');
@@ -121,9 +117,9 @@
   var onSignupComplete = function(error) {
     signupBtn.disabled = false;
     if (error) {
-      signupError.innerHTML = 'Sorry. Could not signup.';
+      signupError.innerHTML = 'Sorry, could not signup. Please reach out: contact@getvestedapp.com';
     } else {
-      signupSuccess.innerHTML = 'Thanks for signing up!';
+      signupSuccess.innerHTML = 'Thanks, you will be first to know when the app is ready.';
       // hide the form
       signupForm.style.display = 'none';
     }
@@ -137,6 +133,65 @@
     signupBtn.disabled = true;
     return false;
   }
+</script>
+
+<!-- save up to... autotype -->
+<script>
+  var TxtRotate = function(el, toRotate, period) {
+    this.toRotate = toRotate;
+    this.el = el;
+    this.loopNum = 0;
+    this.period = parseInt(period, 10) || 2000;
+    this.txt = '';
+    this.tick();
+    this.isDeleting = false;
+  };
+
+  TxtRotate.prototype.tick = function() {
+    var i = this.loopNum % this.toRotate.length;
+    var fullTxt = this.toRotate[i];
+
+    //letter speed added / deleted
+    if (this.isDeleting) {
+      this.txt = fullTxt.substring(0, this.txt.length - 40);
+    } else {
+      this.txt = fullTxt.substring(0, this.txt.length + 3);
+    }
+
+    this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+    var that = this;
+    var delta = 300 - Math.random() * 100;
+
+    if (this.isDeleting) { delta /= 2; }
+
+    if (!this.isDeleting && this.txt === fullTxt) {
+      delta = this.period;
+      this.isDeleting = true;
+    } else if (this.isDeleting && this.txt === '') {
+      this.isDeleting = false;
+      this.loopNum++;
+      delta = 500;
+    }
+    setTimeout(function() {
+      that.tick();
+    }, delta);
+  };
+  window.onload = function() {
+    var elements = document.getElementsByClassName('txt-rotate');
+    for (var i=0; i<elements.length; i++) {
+      var toRotate = elements[i].getAttribute('data-rotate');
+      var period = elements[i].getAttribute('data-period');
+      if (toRotate) {
+        new TxtRotate(elements[i], JSON.parse(toRotate), period);
+      }
+    }
+    // INJECT CSS
+    var css = document.createElement("style");
+    css.type = "text/css";
+    css.innerHTML = ".txt-rotate > .wrap { border-right: 0.05em solid #B6DBFF }";
+    document.body.appendChild(css);
+  };
 </script>
 </body>
 </html>
