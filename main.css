@@ -87,6 +87,14 @@ background-repeat: no-repeat;
 background-size: 100%;
 background-position: center;
 }
+.img-icons-mobile {
+height: 3em;
+padding-top: 6em;
+background-image: url(https://s3-us-west-2.amazonaws.com/vested/icons-mobile.png);
+background-repeat: no-repeat;
+background-size: 100%;
+background-position: center;
+}
 .hero {
 margin-top: -10px;
 font-family: Futura, "Trebuchet MS", Arial, sans-serif;
