@@ -21,18 +21,13 @@
       <div class="row">
         <div class="col">
           <div class="hero">
-            Put your Savings on Autopilot
+            Your savings on autopilot
           </div>
-          <p style="margin-top: 2em;">
-            Saving should be simple, <i>vested</i> lets you set a reasonable goal and shows you the path forward
-          </p>
-          <p class="d-none d-md-block" style="margin-top: 1em;">
-            Smart goal tracking keeps you mindful of your earnings and and where you need to be, to stay on target
+          <p style="margin-top: 3em;">
+            Saving should be simple, <i>vested</i> lets you track savings like fitness and encourages you reach your goal one month at a time
           </p>
           <div class="">
-            <div style="font-weight:500; padding-top: 1em;">
-              Get notified when it's available:
-            </div>
+            <p style="font-weight:500; padding-top: 2em;">Get notified when it's available:</p>
             <h5><span id="signup-success" class="badge badge-primary"></span></h5>
             <h5><span id="signup-error" class="badge badge-danger"></span></h5>
             <form class="signup-form form-inline spacing-bottom" id="signup-form" role="form" onsubmit="return signup(this)">
@@ -45,10 +40,10 @@
             </form>
           </div>
         </div>
-        <div class="col">
-          <img class="center" src="https://s3-us-west-2.amazonaws.com/vested/savingsgoal.png" alt="Lamp" height="480">
+         <div class="col">
+          <img class="image-float" src="https://s3-us-west-2.amazonaws.com/vested/savingsgoal.png" alt="Lamp" height="480">
           <p class="d-md-none d-lg-none d-xl-none" style="margin-top: 1em;">
-            Smart goal tracking keeps you mindful of your earnings and and where you need to be, to stay on target
+            Saving should be simple, <i>vested</i> lets you track savings like fitness and encourages you reach your goal one month at a time
           </p>
         </div>
       </div>
@@ -59,38 +54,27 @@
       </div>
     </div>
   </div>
+  <div class="row justify-content-center">
+    <div class="col-lg-8 text-center">
+      <div class="text-center hero-blue" style="margin-top: 2em;">Set goals that matter</div>
+      <img class="center" style="margin-top: 4em;" src="https://s3-us-west-2.amazonaws.com/vested/wheelhouse.png" alt="Lamp" height="120">
+      <div class="text-center hero-blue-rotate d-none d-md-block">
+        <span class="txt-rotate" data-period="1000" data-rotate='[ "make a big purchase.", "settle high interest debt.", "establish a safety net.", "pay off student loans.", "take a needed vacation.", "retire early.", "plan for your family.", "optimize your earnings" ]'></span>
+      </div>
+    </div>
+  </div>
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-8 text-center">
-        <img class="center spacing-top" src="https://s3-us-west-2.amazonaws.com/vested/monthlycategory.png" alt="Lamp" height="480">
-        <div class="text-center hero-blue">
-          Follow your money
-        </div>
+        <img class="center spacing-top" src="https://s3-us-west-2.amazonaws.com/vested/monthlycategory.png" alt="Lamp" height="600">
+        <div class="text-center hero-blue">Let your accounts work for you</div>
         <p class="center text-center font-blue" style="margin-top: 2em;">
-          View monthly snapshots of your income and expenses, auto-categorized, to help you stay mindful of how much you are spending and discover where there’s room to improve
-        </p>
-      </div>
-    </div>
-    <div class="img-icons d-none d-md-block" style="margin-top: 2em; margin-bottom: 2em;"></div>
-    <div class="img-icons-mobile d-md-none d-lg-none d-xl-none" style="margin-top: 2em; margin-bottom: 2em;"></div>
-    <div class="row justify-content-center">
-      <div class="col-lg-8 text-center">
-        <img class="center spacing-top" src="https://s3-us-west-2.amazonaws.com/vested/wheelhouse.png" alt="Lamp" height="380">
-        <div class="text-center hero-blue d-none d-md-block">
-          <div>Save up to</div>
-          <span class="txt-rotate" data-period="2000" data-rotate='[ "____________.", "make a big purchase.", "settle high interest debt.", "establish a safety net.", "pay off student loans.", "take a needed vacation.", "retire early.", "plan for your family.", "your full potential!" ]'></span>
-        </div>
-        <div class="text-center hero-blue-small d-md-none d-lg-none d-xl-none">
-          <div>Save up to</div>
-          <span class="txt-rotate" data-period="2000" data-rotate='[ "____________.", "make a big purchase.", "settle high interest debt.", "establish a safety net.", "pay off student loans.", "take a needed vacation.", "retire early.", "plan for your family.", "your full potential!" ]'></span>
-        </div>
-        <p class="center text-center font-blue" style="margin-top: 1em; margin-bottom: 4em;">
-          Whether you’re saving for something big or a rainy day, it can be challenging to stick to a savings goal— <i>vested</i> keeps you mindful of your earnings, so you can optimize your savings and keep your eye on the prize
+          <i>vested</i> gives you smart savings goal recommendations, based on your historic behavior and future projections
         </p>
       </div>
     </div>
   </div>
-  <div class="backgradient" style="margin-top: 3em;">
+  <div class="backgradient" style="margin-top: 10em;">
     <nav class="nav justify-content-center">
       <a class="nav-link" href="#">Methodology</a>
       <a class="nav-link" href="#">Terms</a>
@@ -148,7 +132,7 @@
     this.toRotate = toRotate;
     this.el = el;
     this.loopNum = 0;
-    this.period = parseInt(period, 10) || 2000;
+    this.period = parseInt(period, 50) || 1500;
     this.txt = '';
     this.tick();
     this.isDeleting = false;
@@ -162,7 +146,7 @@
     if (this.isDeleting) {
       this.txt = fullTxt.substring(0, this.txt.length - 40);
     } else {
-      this.txt = fullTxt.substring(0, this.txt.length + 3);
+      this.txt = fullTxt.substring(0, this.txt.length + 2);
     }
 
     this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';

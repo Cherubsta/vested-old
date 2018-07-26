@@ -2,11 +2,11 @@ body {
 /* background-color:#FFFFFF; */
 /* background-image: repeating-linear-gradient(); */
 color: #FFF;
-font-family: -apple-system, BlinkMacSystemFont, sans-serif, 'Helvetica Neue', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica', 'Arial', 'Lucida Grande', 'sans-serif';
+font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 }
 
 .font-blue {
-color: #2794FF;
+color: #4984C0;
 }
 
 h1 {
@@ -28,7 +28,8 @@ a, a:visited, a:hover, a:active {
 /*text-decoration: none;*/ */
 }
 a:hover {
-color: #B6DBFF;
+color: #FFFFFF;
+opacity: 0.5;
 /*font-weight: bolder;*/
 }
 
@@ -81,11 +82,12 @@ opacity: 0.95;
 }
 .img-icons {
 height: 3em;
-padding-top: 6em;
+padding-top: 10em;
 background-image: url(https://s3-us-west-2.amazonaws.com/vested/icons.png);
 background-repeat: no-repeat;
 background-size: 100%;
 background-position: center;
+opacity: 0.5;
 }
 .img-icons-mobile {
 height: 3em;
@@ -104,37 +106,42 @@ font-variant: normal;
 font-weight: 900;
 }
 .hero-blue {
-margin-top: 0.5em;
-color: #2794FF;
+margin-top: 2em;
+color: #4984C0;
 font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-font-size: 40px;
+font-size: 30px;
 font-style: normal;
 font-variant: normal;
 font-weight: 900;
 }
-.hero-blue-small {
-margin-top: 0.5em;
-color: #2794FF;
+.hero-blue-rotate {
+margin-top: 2em;
+color: #4984C0;
 font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-font-size: 26px;
+font-size: 30px;
 font-style: normal;
 font-variant: normal;
-font-weight: 900;
+font-weight: 100;
+opacity: 0.5;
 }
 .spacing-top {
-padding-top: 3em;
+padding-top: 10em;
 }
 .spacing-bottom {
 padding-bottom: 3em;
 }
 .font-lt {
-color: #B6DBFF;
+color: #FFFFFF;
+opacity: 0.5;
+}
+.image-float {
+  float:right;
 }
 
-#signup-form input#email::-webkit-input-placeholder {color:#B6DBFF;}
-#signup-form input#email::-moz-placeholder          {color:#B6DBFF;}
-#signup-form input#email:-moz-placeholder           {color:#B6DBFF;}
-#signup-form input#email:-ms-input-placeholder      {color:#B6DBFF;}
+#signup-form input#email::-webkit-input-placeholder {color:#3D72B3; opacity: 0.5;}
+#signup-form input#email::-moz-placeholder          {color:#3D72B3; opacity: 0.5;}
+#signup-form input#email:-moz-placeholder           {color:#3D72B3; opacity: 0.5;}
+#signup-form input#email:-ms-input-placeholder      {color:#3D72B3; opacity: 0.5;}
 
 
 @media(max-width: 800px) { /* for devies under 600px width, iPhone 6+ */
