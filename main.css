@@ -107,16 +107,7 @@ font-style: normal;
 font-variant: normal;
 font-weight: 900;
 }
-.hero-small {
-margin-top: -10px;
-margin-bottom: 10px;
-font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-font-size: 30px;
-font-style: normal;
-font-variant: normal;
-font-weight: 900;
-text-align: center;
-}
+
 .hero-blue {
 margin-top: 2em;
 color: #4984C0;
@@ -137,10 +128,10 @@ font-weight: 900;
 .hero-rotate-small {
 margin-top: 2em;
 font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-font-size: 30px;
+font-size: 24px;
 font-style: normal;
 font-variant: normal;
-font-weight: 100;
+font-weight: 900;
 }
 .spacing-top {
 padding-top: 10em;
