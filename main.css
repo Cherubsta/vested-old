@@ -3,8 +3,10 @@ body {
 /* background-image: repeating-linear-gradient(); */
 color: #FFF;
 font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-overflow-x: hidden;
-min-width: 150px;
+/* overflow-x: hidden;
+width: 100%;
+padding: 0 !important;
+  margin: 0 !important; */
 }
 
 .font-blue {
@@ -119,6 +121,7 @@ font-weight: 900;
 }
 .hero-rotate {
 margin-top: 2em;
+padding-top: 2em;
 font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 font-size: 36px;
 font-style: normal;
@@ -127,6 +130,7 @@ font-weight: 900;
 }
 .hero-rotate-small {
 margin-top: 2em;
+padding-top: 2em;
 font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 font-size: 24px;
 font-style: normal;
