@@ -98,6 +98,7 @@ background-image: url(https://s3-us-west-2.amazonaws.com/vested/icons-mobile.png
 background-repeat: no-repeat;
 background-size: 100%;
 background-position: center;
+opacity: 0.5;
 }
 .hero {
 margin-top: -10px;
@@ -107,7 +108,6 @@ font-style: normal;
 font-variant: normal;
 font-weight: 900;
 }
-
 .hero-blue {
 margin-top: 2em;
 color: #4984C0;
