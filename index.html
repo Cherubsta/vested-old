@@ -18,7 +18,8 @@
     <div class="container">
       <div class="img-icons d-none d-md-block"></div>
       <div class="img-icons-mobile d-md-none d-lg-none d-xl-none"></div>
-      <div class="row">
+
+      <div class="d-none d-md-block row">
         <div class="col">
           <div class="hero">
             Your savings on autopilot
@@ -41,13 +42,43 @@
           </div>
         </div>
          <div class="col">
-          <img class="d-none d-md-block image-float" src="https://s3-us-west-2.amazonaws.com/vested/savingsgoal.png" alt="Lamp" height="480">
-          <img class="d-md-none d-lg-none d-xl-none center" src="https://s3-us-west-2.amazonaws.com/vested/savingsgoal.png" alt="Lamp" height="480">
+          <img class="image-float" src="https://s3-us-west-2.amazonaws.com/vested/savingsgoal.png" alt="Lamp" height="480">
           <!-- <p class="d-md-none d-lg-none d-xl-none" style="margin-top: 1em;">
             Saving should be simple, <i>vested</i> lets you track savings like fitness and encourages you reach your goal one month at a time
           </p> -->
         </div>
       </div>
+
+      <div class="d-md-none d-lg-none d-xl-none row">
+        <div class="col">
+          <div class="hero-small">
+            Your savings on autopilot
+          </div>
+          <div class="col">
+            <img class="center" src="https://s3-us-west-2.amazonaws.com/vested/savingsgoal.png" alt="Lamp" height="480">
+            <!-- <p class="d-md-none d-lg-none d-xl-none" style="margin-top: 1em;">
+              Saving should be simple, <i>vested</i> lets you track savings like fitness and encourages you reach your goal one month at a time
+            </p> -->
+          </div>
+          <p style="margin-top: 1em;">
+            Saving should be simple, <i>vested</i> lets you track savings like fitness and encourages you reach your goal one month at a time
+          </p>
+          <div class="">
+            <p style="font-weight:500; padding-top: 2em;">Get notified when it's available:</p>
+            <h5><span id="signup-success" class="badge badge-primary"></span></h5>
+            <h5><span id="signup-error" class="badge badge-danger"></span></h5>
+            <form class="signup-form form-inline spacing-bottom" id="signup-form" role="form" onsubmit="return signup(this)">
+              <input class="form-control" id="email" name="email" type="email" placeholder="Email address" required style="width: 78%; height: 48px; border: none; border-radius: 7px;">
+              <!-- <button class="btn btn-success" id="signup-button" type="submit" > -> </button> -->
+              <button class="btn btn-success" id="signup-button" type="submit" style="background-color: transparent; border:none">
+                <img class="visible" src="https://s3-us-west-2.amazonaws.com/vested/emailbutton.png" width="40" />
+                <img class="hidden" src="https://s3-us-west-2.amazonaws.com/vested/emailbuttongo.png" width="40" />
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
       <div class="row">
         <div class="col text-center spacing-bottom font-lt" style="margin-top: 4em;">
           Learn more <img src="https://s3-us-west-2.amazonaws.com/vested/arrowdown.png" alt="Lamp" height="10em" style="padding-left: 4px">

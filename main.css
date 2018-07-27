@@ -105,6 +105,16 @@ font-style: normal;
 font-variant: normal;
 font-weight: 900;
 }
+.hero-small {
+margin-top: -10px;
+margin-bottom: 10px;
+font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+font-size: 30px;
+font-style: normal;
+font-variant: normal;
+font-weight: 900;
+text-align: center;
+}
 .hero-blue {
 margin-top: 2em;
 color: #4984C0;
@@ -175,7 +185,7 @@ column-gap: 35px;
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
 body{
-  font-family: 'Helvetica', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Arial', 'Lucida Grande', 'sans-serif';
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 }
 .div-landscape-sm {
   float: right;
@@ -185,7 +195,7 @@ body{
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
 body{
-  font-family: 'Helvetica', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Arial', 'Lucida Grande', 'sans-serif';
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 }
 .div-landscape-sm {
   width: 100%;
