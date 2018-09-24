@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="A savings plan, right in your pocket">
+  <meta name="keywords" content="savings, investment, save money, savings goal, savings plan">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="shortcut icon" href="https://s3-us-west-2.amazonaws.com/vested/favicon.png">
+  <title>vested — FAQ</title>
+</head>
+<body>
+  <a class="img-heading" href="http://getvestedapp.com"></a>
+  <div class="backgradient">
+    <div class="container">
+      <h1 class="font-blue text-center" style="padding-top: 1em;">Frequently Asked Questions</h1>
+      <div class="img-icons d-none d-md-block"></div>
+      <div class="img-icons-mobile d-md-none d-lg-none d-xl-none"></div>
+      <div class="row justify-content-center">
+        <div class="col center">
+          <h2>What is <em>vested</em>?</h2>
+          <p class="faq-answer font-blue">
+            <i>vested</i> helps you save money for the things you care about, by learning your finances, recommending goals that are in your reach, and showing you the path forward.
+          </p>
+
+          <h2>Is <em>vested</em> right for me?</h2>
+          <p class="faq-answer font-blue">
+            If you are in debt and want to dig yourself out, or if you're debt–free and want to make the most of your extra earnings, you came to the right place.
+          </p>
+
+          <h2>How much does it cost to use?</h2>
+          <p class="faq-answer font-blue">
+            <i>vested</i> is free to use!
+          </p>
+
+          <h2>Are you a bank?</h2>
+          <p class="faq-answer font-blue">
+            We're not a bank. Think of <em>vested?</em>, as a financial advisor, letting you know your options, and keeping you track to reaching your goal.
+          </p>
+
+          <h2>Where do my savings go?</h2>
+          <p class="faq-answer font-blue">
+            Since we’re not a bank, it’s up to you to move the money you save into a dedicated account. This would help you keep track of it. Or if you are investing it, we'll recommend long-term savings options such as  401K or Roth IRA or shorter term savings such as a high-interest online banking account.
+          </p>
+
+          <h2>What if I use a joint account?</h2>
+          <p class="faq-answer font-blue">
+            Call Fadi.
+          </p>
+
+          <h2>How do you keep my data secure?</h2>
+          <p class="faq-answer font-blue">
+            To protect your financial security and privacy, <i>vested</i> uses the same level of security as your bank. We never have access to money in your account or confidential information such as full credit card, account or routing numbers, and we will not share or sell your data to anyone for any reason.
+          </p>
+
+          <h2>Have another question?</h2>
+          <p class="faq-answer" style="background-color:#314E8B">
+            <a href="mailto:contact@getvestedapp.com?Subject=Ask%20vested%20team" target="_top" style="text-decoration: underline; font-size: 24px;">
+              Ask the <em>vested</em> team!
+            <a/>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="backgradient" style="margin-top: 10em;">
+      <div class="spacing-top">
+        <nav class="nav justify-content-center">
+          <a class="nav-link" href="#">About us</a>
+          <a class="nav-link" href="/faq">FAQ</a>
+          <a class="nav-link" href="#">Press</a>
+          <a class="nav-link" href="#">Contact</a>
+        </nav>
+      </div>
+      <div class="py-3 text-center">
+        <div class="container-fluid">
+          <span style="font-size: 12px; opacity: 0.5;">vested ©2018</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.firebase.com/js/client/1.0.18/firebase.js"></script>
+  <script>
+  var signupForm = document.getElementById('signup-form');
+  var signupSuccess = document.getElementById('signup-success');
+  var signupError = document.getElementById('signup-error');
+  var signupBtn = document.getElementById('signup-button');
+  var onSignupComplete = function(error) {
+    signupBtn.disabled = false;
+    if (error) {
+      signupError.innerHTML = 'Sorry, could not signup. Please reach out: contact@getvestedapp.com';
+    } else {
+      signupSuccess.innerHTML = 'Thanks, you will be first to know when the app is ready.';
+      // hide the form
+      signupForm.style.display = 'none';
+    }
+  };
+  function signup(formObj) {
+    // Store emails to firebase
+    var myFirebaseRef = new Firebase("https://vested-11d32.firebaseio.com/");
+    myFirebaseRef.push({
+      email: formObj.email.value,
+    }, onSignupComplete);
+    signupBtn.disabled = true;
+    return false;
+  }
+</script>
+
+<!-- save up to... autotype -->
+<script>
+  var TxtRotate = function(el, toRotate, period) {
+    this.toRotate = toRotate;
+    this.el = el;
+    this.loopNum = 0;
+    this.period = parseInt(period, 50) || 1500;
+    this.txt = '';
+    this.tick();
+    this.isDeleting = false;
+  };
+
+  TxtRotate.prototype.tick = function() {
+    var i = this.loopNum % this.toRotate.length;
+    var fullTxt = this.toRotate[i];
+
+    //letter speed added / deleted
+    if (this.isDeleting) {
+      this.txt = fullTxt.substring(0, this.txt.length - 40);
+    } else {
+      this.txt = fullTxt.substring(0, this.txt.length + 2);
+    }
+
+    this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+    var that = this;
+    var delta = 300 - Math.random() * 100;
+
+    if (this.isDeleting) { delta /= 4; }
+
+    if (!this.isDeleting && this.txt === fullTxt) {
+      delta = this.period;
+      this.isDeleting = true;
+    } else if (this.isDeleting && this.txt === '') {
+      this.isDeleting = false;
+      this.loopNum++;
+      delta = 500;
+    }
+    setTimeout(function() {
+      that.tick();
+    }, delta);
+  };
+  window.onload = function() {
+    var elements = document.getElementsByClassName('txt-rotate');
+    for (var i=0; i<elements.length; i++) {
+      var toRotate = elements[i].getAttribute('data-rotate');
+      var period = elements[i].getAttribute('data-period');
+      if (toRotate) {
+        new TxtRotate(elements[i], JSON.parse(toRotate), period);
+      }
+    }
+    // INJECT CSS
+    var css = document.createElement("style");
+    css.type = "text/css";
+    css.innerHTML = ".txt-rotate > .wrap { border-right: 0.05em solid #B6DBFF }";
+    document.body.appendChild(css);
+  };
+</script>
+</body>
+</html>

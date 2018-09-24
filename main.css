@@ -14,7 +14,11 @@ color: #4984C0;
 }
 
 h1 {
-
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-size: 42px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 900;
 }
 h2 {
 
@@ -71,6 +75,14 @@ background-size:contain;
 
 .div-aligntext {
 text-align: left;
+}
+
+.faq-answer {
+display: block;
+background-color: #FFF;
+padding: 2em 1em;
+border-radius: 40px 40px 40px 5px;
+margin-bottom: 3em;
 }
 
 .img-heading {
