@@ -160,10 +160,10 @@ color: #FFFFFF;
 opacity: 0.5;
 }
 
-#signup-form input#email::-webkit-input-placeholder {color:#3D72B3; opacity: 0.5;}
-#signup-form input#email::-moz-placeholder          {color:#3D72B3; opacity: 0.5;}
-#signup-form input#email:-moz-placeholder           {color:#3D72B3; opacity: 0.5;}
-#signup-form input#email:-ms-input-placeholder      {color:#3D72B3; opacity: 0.5;}
+#signup-form input#email::-webkit-input-placeholder {color:#4984C0; }
+#signup-form input#email::-moz-placeholder          {color:#4984C0; }
+#signup-form input#email:-moz-placeholder           {color:#4984C0; }
+#signup-form input#email:-ms-input-placeholder      {color:#4984C0; }
 
 
 @media(max-width: 800px) { /* for devies under 600px width, iPhone 6+ */
