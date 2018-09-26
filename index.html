@@ -19,67 +19,39 @@
       <div class="img-icons d-none d-md-block"></div>
       <div class="img-icons-mobile d-md-none d-lg-none d-xl-none"></div>
 
-      <div class="d-none d-md-block">
-        <div class="row justify-content-center">
-          <div class="col">
-            <h1>Your savings on autopilot</h1>
+      <div class="row justify-content-center">
+        <div class="col">
+          <h1 class="d-none d-md-block">Your savings on autopilot</h1>
+          <div class="d-md-none d-lg-none d-xl-none text-center">
+            <div class="hero text-center">Your savings on autopilot</div>
+            <img src="https://s3-us-west-2.amazonaws.com/vested/savingsgoal.png" style="margin-top: 3em;" alt="Lamp" height="480">
             <p style="margin-top: 2em;">
               Saving money should be simple. <br /> <i>vested</i> tracks your savings like fitness and encourages you reach your goal one month at a time
             </p>
-            <div>
-              <h5><span id="signup-success" class="badge badge-primary"></span></h5>
-              <h5><span id="signup-error" class="badge badge-danger"></span></h5>
-              <div class="text-center center">
-                <form class="signup-form form-inline spacing-bottom center" id="signup-form" role="form" onsubmit="return signup(this)">
-                  <div class="form-group form-inline">
-                    <label style="font-weight:500; padding-top: 2em; color: #FFE74C;">Get notified when it's available:</label>
-                    <input class="form-control" id="email" name="email" type="email" placeholder="Email address" required style="width: 80%; height: 48px; border: none; border-radius: 7px; background-color: #FFE74C;">
-
-                    <button class="btn btn-success" id="signup-button" type="submit" style="background-color: transparent; border:none;">
-                      <img class="visible" src="https://s3-us-west-2.amazonaws.com/vested/emailbutton.png" width="40" />
-                      <img class="hidden" src="https://s3-us-west-2.amazonaws.com/vested/emailbuttongo.png" width="40" />
-                    </button>
-                  </div>
-                </form>
-              </div>
-            </div>
           </div>
-          <div class="col text-center">
-            <img src="https://s3-us-west-2.amazonaws.com/vested/savingsgoal.png" alt="Lamp" height="480" style="float:right;">
+          <p class="d-none d-md-block" style="margin-top: 2em;">
+            Saving money should be simple. <br /> <i>vested</i> tracks your savings like fitness and encourages you reach your goal one month at a time
+          </p>
+          <div>
+            <h5><span id="signup-success" class="badge badge-primary"></span></h5>
+            <h5><span id="signup-error" class="badge badge-danger"></span></h5>
+            <div class="text-center center">
+              <form class="signup-form form-inline spacing-bottom center" id="signup-form" role="form" onsubmit="return signup(this)">
+                <div class="form-group form-inline">
+                  <label style="font-weight:500; padding-top: 2em; color: #FFE74C;">Get notified when it's available:</label>
+                  <input class="form-control" id="email" name="email" type="email" placeholder="Email address" required style="width: 80%; height: 48px; border: none; border-radius: 7px; background-color: #FFE74C;">
+
+                  <button class="btn btn-success" id="signup-button" type="submit" style="background-color: transparent; border:none;">
+                    <img class="visible" src="https://s3-us-west-2.amazonaws.com/vested/emailbutton.png" width="40" />
+                    <img class="hidden" src="https://s3-us-west-2.amazonaws.com/vested/emailbuttongo.png" width="40" />
+                  </button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
-      </div>
-
-      <div class="d-md-none d-lg-none d-xl-none">
-        <div class="row justify-content-center">
-          <div class="col center">
-            <div class="hero text-center">Your savings on autopilot</div>
-            <div class="text-center" style="margin-top: 3em;">
-              <img src="https://s3-us-west-2.amazonaws.com/vested/savingsgoal.png" alt="Lamp" height="480">
-            </div>
-            <div class="col-lg-8 center">
-              <p class="text-center" style="margin-top: 2em;">
-                Saving money should be simple. <br /> <i>vested</i> tracks your savings like fitness and encourages you reach your goal one month at a time
-              </p>
-            </div>
-            <div class="col center">
-              <h5><span id="signup-success" class="badge badge-primary"></span></h5>
-              <h5><span id="signup-error" class="badge badge-danger"></span></h5>
-              <div class="text-center center">
-                <form class="signup-form form-inline spacing-bottom center" id="signup-form" role="form" onsubmit="return signup(this)">
-                  <div class="form-group form-inline">
-                    <label style="font-weight:500; padding-top: 2em; color: #FFE74C;">Get notified when it's available:</label>
-                    <input class="form-control" id="email" name="email" type="email" placeholder="Email address" required style="width: 75%; height: 48px; border: none; border-radius: 7px; background-color: #FFE74C;">
-
-                    <button class="btn btn-success" id="signup-button" type="submit" style="background-color: transparent; border:none;">
-                      <img class="visible" src="https://s3-us-west-2.amazonaws.com/vested/emailbutton.png" width="40" />
-                      <img class="hidden" src="https://s3-us-west-2.amazonaws.com/vested/emailbuttongo.png" width="40" />
-                    </button>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
+        <div class="d-none d-md-block col text-center">
+          <img src="https://s3-us-west-2.amazonaws.com/vested/savingsgoal.png" alt="Lamp" height="480" style="float:right;">
         </div>
       </div>
       <div class="row justify-content-center">
@@ -165,7 +137,7 @@
     if (error) {
       signupError.innerHTML = 'Sorry, could not signup. Please reach out: contact@getvestedapp.com';
     } else {
-      signupSuccess.innerHTML = 'Thanks, you will be first to know when the app is ready.';
+      signupSuccess.innerHTML = 'Thanks, we will let you know when it is available.';
       // hide the form
       signupForm.style.display = 'none';
     }
