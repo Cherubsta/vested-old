@@ -13,145 +13,128 @@
   <title>vested</title>
 </head>
 <body>
-  <div class="img-heading sticky-top"></div>
-  <div class="backgradient">
-    <div class="container">
-      <div class="img-icons d-none d-md-block"></div>
-      <div class="img-icons-mobile d-md-none d-lg-none d-xl-none"></div>
-
-      <div class="row justify-content-center">
-        <div class="col">
-          <h1 class="d-none d-md-block">Your savings on autopilot</h1>
-          <div class="d-md-none d-lg-none d-xl-none text-center">
-            <div class="hero text-center">Your savings on autopilot</div>
-            <img src="https://s3-us-west-2.amazonaws.com/vested/savingsgoal.png" style="margin-top: 3em;" alt="Lamp" height="480">
-            <p style="margin-top: 2em;">
-              Saving money should be simple. <br /> <i>vested</i> tracks your savings like fitness and encourages you reach your goal one month at a time
-            </p>
-          </div>
-          <p class="d-none d-md-block" style="margin-top: 2em;">
-            Saving money should be simple. <br /> <i>vested</i> tracks your savings like fitness and encourages you reach your goal one month at a time
-          </p>
-          <div class="text-center center">
-            <div class="row justify-content-center">
-              <span id="signup-success" class="badge badge-success"></span>
-              <span id="signup-error" class="badge badge-danger"></span>
-            </div>
-            <form class="signup-form form-inline spacing-bottom center" id="signup-form" role="form" onsubmit="return signup(this)">
-              <div class="form-group form-inline">
-                <label style="font-weight:500; padding-top: 2em; color: #FFE74C;">Get notified when it's available:</label>
-                <input class="form-control" id="email" name="email" type="email" placeholder="Email address" required style="width: 80%; height: 48px; border: none; border-radius: 7px; background-color: #FFE74C;">
-                <button class="btn btn-success" id="signup-button" type="submit" style="background-color: transparent; border:none;">
-                  <img class="visible" src="https://s3-us-west-2.amazonaws.com/vested/emailbutton.png" width="40" />
-                  <img class="hidden" src="https://s3-us-west-2.amazonaws.com/vested/emailbuttongo.png" width="40" />
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-        <div class="d-none d-md-block col text-center">
-          <img src="https://s3-us-west-2.amazonaws.com/vested/savingsgoal.png" alt="Lamp" height="480" style="float:right;">
-        </div>
-      </div>
-
-      <div class="row justify-content-center">
-        <div class="col text-center font-lt" style="margin-bottom: 2em;">
-          Learn more <img src="https://s3-us-west-2.amazonaws.com/vested/arrowdown.png" alt="Lamp" height="10em" style="padding-left: 4px">
-        </div>
-      </div>
-    </div>
-  </div>
-
+<div class="img-heading sticky-top">
   <div class="container">
+    <img src="https://s3-us-west-2.amazonaws.com/vested/logo-vested.png" alt="Lamp" height="22" style="margin-top: 10px;">
+  </div>
+</div>
+<div class="backgradient spacing-bottom">
+  <div class="container">
+    <div class="img-icons d-none d-md-block"></div>
+    <div class="img-icons-mobile d-md-none d-lg-none d-xl-none"></div>
     <div class="row justify-content-center">
-      <div class="col center">
-        <div class="text-center hero-blue">Let your accounts work for you</div>
-        <div class="text-center" style="margin-top: 3em;">
-          <img src="https://s3-us-west-2.amazonaws.com/vested/monthlycategory.png" alt="Lamp" height="450">
-        </div>
-        <div class="col-lg-8 center">
-          <p class="text-center font-blue" style="margin-top: 2em;">
-          <i>vested</i> recommends smart savings goals, based on your historic behavior and future projections
+      <div class="col">
+        <h1 class="d-none d-md-block">Your savings on autopilot</h1>
+        <div class="d-md-none d-lg-none d-xl-none text-center">
+          <div class="hero text-center">Your savings on autopilot</div>
+          <img src="https://s3-us-west-2.amazonaws.com/vested/savingsgoal.png" style="margin-top: 3em;" alt="Lamp" height="480">
+          <p style="margin-top: 2em;">
+            Saving money should be simple &mdash; <br /> <i>vested</i> tracks your savings like fitness and encourages you reach your goal one month at a time
           </p>
         </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="backgradient" style="margin-top: 10em;">
-    <div class="justify-content-center">
-      <div class="col-lg-8 center text-center">
+        <h3 class="d-none d-md-block spacing-bottom" style="margin-top: 2em;">
+          Saving money should be simple &mdash; <br /> <i>vested</i> tracks your savings like fitness and encourages you reach your goal one month at a time
+        </h3>
         <div class="d-none d-md-block">
-          <div class="text-center hero-rotate">
-            <span class="txt-rotate" data-period="1000" data-rotate='[ "Set goals that matter...", "make a big purchase", "settle high interest debt", "establish a safety net", "pay off student loans", "take a needed vacation", "retire early", "plan for your family", "optimize earnings 💸" ]'></span>
-          </div>
+          <img src="https://s3-us-west-2.amazonaws.com/vested/btn-badge.png" alt="Lamp" height="64">
         </div>
-        <div class="d-md-none d-lg-none d-xl-none">
-          <div class="text-center hero-rotate-small">
-            <span class="txt-rotate" data-period="1000" data-rotate='[ "Set goals that matter...", "make a big purchase", "settle high interest debt", "establish a safety net", "pay off student loans", "take a needed vacation", "retire early", "plan for your family", "optimize earnings 💸" ]'></span>
-          </div>
+        <div class="d-md-none d-lg-none d-xl-none text-center">
+          <img src="https://s3-us-west-2.amazonaws.com/vested/btn-badge.png" alt="Lamp" height="64">
         </div>
-        <div class="col text-center" style="margin-top: 3em;">
-          <img src="https://s3-us-west-2.amazonaws.com/vested/wheelhouse.png" alt="Lamp" width="80%">
-        </div>
-
-        <div class="col-lg-8 center">
-          <p class="text-center" style="margin-top: 2em;">
-          Whether you're saving for a sunny vacation or a rainy day, <i>vested</i> learns where you need to be and shows you the path forward
-          </p>
-        </div>
-
       </div>
-    </div>
-
-    <div class="spacing-top">
-      <nav class="nav justify-content-center">
-        <a class="nav-link" href="#">About us</a>
-        <a class="nav-link" href="/faq">FAQ</a>
-        <a class="nav-link" href="#">Press</a>
-        <a class="nav-link" href="#">Contact</a>
-      </nav>
-    </div>
-    <div class="py-3 text-center">
-      <div class="container-fluid">
-        <span style="font-size: 12px; opacity: 0.5;">vested ©2018</span>
+      <div class="d-none d-md-block col text-center">
+        <img src="https://s3-us-west-2.amazonaws.com/vested/savingsgoal.png" alt="Lamp" height="480" style="float:right;">
       </div>
     </div>
   </div>
+</div>
+<div class="container" id="section2">
+  <div class="row justify-content-center" style="padding-top: 1em;">
+    <div class="col text-center spacing-bottom">
+      <a href="#section2">Learn more <img src="https://s3-us-west-2.amazonaws.com/vested/arrowdown.png" alt="Lamp" height="10em" style="padding-left: 4px"></a>
+    </div>
+  </div>
+</div>
 
+<div class="container shadowbox">
+  <div class="row justify-content-center">
+    <div class="col center">
+      <h1 class="col-9 text-center center spacing-bottom-med">A simple and rewarding savings experience</h1>
+      <div class="row justify-content-center">
+        <div class="col center text-center spacing-top-med">
+          <img src="https://s3-us-west-2.amazonaws.com/vestedwellness/iphone-banks.png" alt="Lamp" height="364">
+          <p><b>Personal account linking</b></p>
+          <p>Members securely link up their bank account for optimal savings goal recommendations</p>
+        </div>
+        <div class="col center text-center spacing-top-med">
+          <img src="https://s3-us-west-2.amazonaws.com/vestedwellness/iphone-goal.png" alt="Lamp" height="364">
+          <p><b>Reachable financial goals</b></p>
+          <p>It’s simple: close your monthly saving rings and stay motivated to save</p>
+        </div>
+        <div class="col center text-center spacing-top-med">
+          <img src="https://s3-us-west-2.amazonaws.com/vestedwellness/iphone-rewards.png" alt="Lamp" height="364">
+          <p><b>Achievements rewarded</b></p>
+          <p>While saving up for what matters, earn points that you can redeem on curated eGifts</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<div class="backgradient" style="margin-top: 10em;">
+  <div class="justify-content-center spacing-bottom">
+    <div class="col-lg-8 center text-center">
+      <div class="d-none d-md-block spacing-bottom">
+        <div class="text-center hero-rotate">
+          <span class="txt-rotate" data-period="1000" data-rotate='[ "Set goals that matter...", "make a big purchase", "settle high interest debt", "establish a safety net", "pay off student loans", "take a needed vacation", "retire early", "plan for your family", "optimize earnings 💸" ]'></span>
+        </div>
+      </div>
+      <div class="d-md-none d-lg-none d-xl-none">
+        <div class="text-center hero-rotate-small">
+          <span class="txt-rotate" data-period="1000" data-rotate='[ "Set goals that matter...", "make a big purchase", "settle high interest debt", "establish a safety net", "pay off student loans", "take a needed vacation", "retire early", "plan for your family", "optimize earnings 💸" ]'></span>
+        </div>
+      </div>
+      <div class="col text-center spacing-bottom" style="margin-top: 3em;">
+        <img src="https://s3-us-west-2.amazonaws.com/vested/wheelhouse.png" alt="Lamp" width="80%">
+      </div>
+      <div class="col-lg-8 center">
+        <h4 class="text-center" style="margin-top: 2em;">
+        Whether you're saving for a sunny vacation or a rainy day, <i>vested</i> learns where you need to be and shows you the path forward
+      </h4>
+      </div>
+    </div>
+  </div>
+</div>
 
-  <script src="https://cdn.firebase.com/js/client/1.0.18/firebase.js"></script>
-  <script>
-  var signupForm = document.getElementById('signup-form');
-  var signupSuccess = document.getElementById('signup-success');
-  var signupError = document.getElementById('signup-error');
-  var signupBtn = document.getElementById('signup-button');
-  var onSignupComplete = function(error) {
-    signupBtn.disabled = false;
-    if (error) {
-      signupError.innerHTML = 'Sorry, could not signup. Please reach out: contact@getvestedapp.com';
-    } else {
-      signupSuccess.innerHTML = 'Thanks, we will let you know when it is available.';
-      // hide the form
-      signupForm.style.display = 'none';
-    }
-  };
-  function signup(formObj) {
-    // Store emails to firebase
-    var myFirebaseRef = new Firebase("https://vested-11d32.firebaseio.com/");
-    myFirebaseRef.push({
-      email: formObj.email.value,
-    }, onSignupComplete);
-    signupBtn.disabled = true;
-    return false;
-  }
-</script>
+<div class="container spacing-top">
+  <div style="padding-left: 20px; padding-right: 20px;"><div class="divider"></div></div>
+  <div class="row">
+    <ul class="col3" style="padding-right:100px;">
+      <li class="font-blue"><b>vested</b></li>
+      <li><a href="#">Features</a></li>
+      <li><a href="#">App download</a></li>
+      <li><a href="#">Pricing</a></li>
+      <li><a href="#">Enterprise</a></li>
+      <li><a href="#">Security</a></li>
+    </ul>
+    <ul class="col3" style="padding-right: 100px;">
+      <li class="font-blue"><b>About us</b></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Why vested?</a></li>
+      <li><a href="#">Case studies</a></li>
+    </ul>
+    <ul class="col3">
+      <li class="font-blue"><b>Support</b></li>
+      <li><a href="#">Help</a></li>
+      <li><a href="/faq">Common questions</a></li>
+      <li><a href="#">Privacy and terms</a></li>
+      <li><a href="#">Contact us</a></li>
+    </ul>
+  </div>
+  <div class="py-3" style="padding-left: 20px;">
+    <span style="font-size: 12px; opacity: 0.5; color: gray;">vested ©2018 &mdash; all rights reserved</span>
+  </div>
+</div>
 
 <!-- save up to... autotype -->
 <script>

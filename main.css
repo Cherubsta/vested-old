@@ -1,44 +1,53 @@
 body {
-/* background-color:#FFFFFF; */
-/* background-image: repeating-linear-gradient(); */
-color: #FFF;
-font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-/* overflow-x: hidden;
-width: 100%;
-padding: 0 !important;
-  margin: 0 !important; */
+  background-color:#F6F6F6;
+  /* background-image: repeating-linear-gradient(); */
+  color: #FFF;
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  /* overflow-x: hidden;
+  width: 100%;
+  padding: 0 !important;
+    margin: 0 !important; */
 }
 
 .font-blue {
-color: #4984C0;
+  color: #4984C0;
+  font-weight: bold;
+}
+.font-lt {
+  color: #FFFFFF;
+  opacity: 0.5;
 }
 
 h1 {
   font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-  font-size: 42px;
+  font-size: 36px;
   font-style: normal;
   font-variant: normal;
   font-weight: 900;
 }
-h2 {
 
-}
 p {
-font-size: 20px;
+  font-size: 16px;
 }
-
 a {
-color: #FFF;
-/* text-decoration: none; */
+  color: #4984C0;
+  /* text-decoration: none; */
 }
 a, a:visited, a:hover, a:active {
-/* color: #FFED7D;
-/*text-decoration: none;*/ */
+  /* color: #FFED7D; */
+  text-decoration: none;
 }
 a:hover {
-color: #FFFFFF;
-opacity: 0.5;
-/*font-weight: bolder;*/
+  opacity: 0.5;
+  /*font-weight: bolder;*/
+}
+ul {
+  font-family: SFProText-Light, "Helvetica neue", Helvetica;
+  font-weight: 300;
+  list-style: none;
+}
+li {
+  padding-bottom: .6em;
 }
 
 .hidden {
@@ -57,108 +66,113 @@ button:hover .hidden {
 }
 
 .container {
-max-width: 900px;
-/* margin: 0 auto;
-text-align: center; */
+  max-width: 1000px;
 }
-.backgradient {
-background-image: url(https://s3-us-west-2.amazonaws.com/vested/background-grad.png);
-background-repeat: repeat-x;
-background-size:contain;
+.shadowbox {
+  background: #FCFCFC;
+  color: #4A4A4A;
+  box-shadow: 0 2px 11px 0 rgba(0,0,0,0.50);
+  border-radius: 10px;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  width: 90%;
+}
+.spacing-top {
+  padding-top: 10em;
+}
+.spacing-top-med {
+  padding-top: 1.5em;
+}
+.spacing-bottom {
+  padding-bottom: 3em;
 }
 
+.backgradient {
+  background-image: url(https://s3-us-west-2.amazonaws.com/vested/background-grad.png);
+  background-repeat: repeat-x;
+  background-size:contain;
+}
 .center {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-
 .div-aligntext {
-text-align: left;
+  text-align: left;
 }
-
 .faq-answer {
-display: block;
-background-color: #FFF;
-padding: 2em 1em;
-border-radius: 40px 40px 40px 5px;
-margin-bottom: 3em;
+  display: block;
+  background-color: #FFF;
+  padding: 2em 1em;
+  border-radius: 40px 40px 40px 5px;
+  margin-bottom: 3em;
 }
 
 .img-heading {
-display: block;
-height: 3em;
-padding-top: 0.3em;
-background-color: #FFF;
-background-image: url(https://s3-us-west-2.amazonaws.com/vested/logo-vested.png);
-background-repeat: no-repeat;
-background-size: 100px;
-background-position: center;
-opacity: 0.95;
+  height: 3em;
+  background-color: #FFF;
+  background-size: contain;
+  opacity: 0.98;
 }
-
 .img-icons {
-height: 3em;
-padding-top: 6em;
-background-image: url(https://s3-us-west-2.amazonaws.com/vested/icons.png);
-background-repeat: no-repeat;
-background-size: 100%;
-background-position: center;
-opacity: 0.5;
+  height: 3em;
+  padding-top: 6em;
+  background-image: url(https://s3-us-west-2.amazonaws.com/vested/icons.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  opacity: 0.5;
 }
 .img-icons-mobile {
-height: 3em;
-padding-top: 6em;
-background-image: url(https://s3-us-west-2.amazonaws.com/vested/icons-mobile.png);
-background-repeat: no-repeat;
-background-size: 100%;
-background-position: center;
-opacity: 0.5;
+  height: 3em;
+  padding-top: 6em;
+  background-image: url(https://s3-us-west-2.amazonaws.com/vested/icons-mobile.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  opacity: 0.5;
 }
 .hero {
-margin-top: -10px;
-font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-font-size: 42px;
-font-style: normal;
-font-variant: normal;
-font-weight: 900;
+  margin-top: -10px;
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-size: 42px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 900;
 }
 .hero-blue {
-margin-top: 2em;
-color: #4984C0;
-font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-font-size: 36px;
-font-style: normal;
-font-variant: normal;
-font-weight: 900;
+  margin-top: 2em;
+  color: #4984C0;
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 900;
 }
 .hero-rotate {
-margin-top: 2em;
-padding-top: 2em;
-font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-font-size: 36px;
-font-style: normal;
-font-variant: normal;
-font-weight: 900;
+  margin-top: 2em;
+  padding-top: 2em;
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 900;
 }
 .hero-rotate-small {
-margin-top: 2em;
-padding-top: 2em;
-font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-font-size: 24px;
-font-style: normal;
-font-variant: normal;
-font-weight: 900;
+  margin-top: 2em;
+  padding-top: 2em;
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 900;
 }
-.spacing-top {
-padding-top: 10em;
-}
-.spacing-bottom {
-padding-bottom: 3em;
-}
-.font-lt {
-color: #FFFFFF;
-opacity: 0.5;
+
+.divider {
+  background-color: #4984C0;
+  height: 1px;
+  display: block;
+  margin-bottom: 1em;
 }
 
 #signup-form input#email::-webkit-input-placeholder {color:#4984C0; }
@@ -190,11 +204,11 @@ ol {
   font-size: 18px;
 }
 ul {
-min-width: 260px;
-font-size: 12px;
-column-gap: 35px;
+  min-width: 260px;
+  font-size: 12px;
+  column-gap: 35px;
 }
-}
+
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
 body{
@@ -207,10 +221,10 @@ body{
 }
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
-body{
+  body{
   font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-}
-.div-landscape-sm {
-  width: 100%;
-}
+  }
+  .div-landscape-sm {
+    width: 100%;
+  }
 }

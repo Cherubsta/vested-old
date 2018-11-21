@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="A savings plan for wellness">
+  <meta name="keywords" content="financial savings, wellness, investment, save money, savings goal, savings plan">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="mainwellness.css">
+  <link rel="shortcut icon" href="https://s3-us-west-2.amazonaws.com/vested/favicon.png">
+  <title>vested</title>
+</head>
+<body>
+<div class="img-heading sticky-top">
+  <div class="container">
+    <a href="index.html"><img src="https://s3-us-west-2.amazonaws.com/vestedwellness/logo-vested.png" alt="Lamp" height="22" style="margin-top: 10px;"></a>
+  </div>
+</div>
+<div class="container">
+  <div class="row justify-content-center">
+    <h1 class="col-9 text-center center">Savings for wellness</h1>
+  </div>
+  <div class="row spacing-bottom spacing-top-med">
+    <div class="col-9">
+    <ul>
+      <h2>Sign up for a free demo of the vested platform and financial savings app.</h2>
+      <li class="spacing-top-med">
+        <i><img src="https://s3-us-west-2.amazonaws.com/vestedwellness/check-logo.png" alt="Lamp" height="14"></i>
+        Simple licensing plan $12 / month / active member
+      </li>
+      <li>
+        <i><img src="https://s3-us-west-2.amazonaws.com/vestedwellness/check-logo.png" alt="Lamp" height="14"></i>
+        Seamless integration and one-time setup fee $1,000
+      </li>
+      <li>
+        <i><img src="https://s3-us-west-2.amazonaws.com/vestedwellness/check-logo.png" alt="Lamp" height="14"></i>
+        Intuitive dashboard to monitor employee engagement
+      </li>
+      <li>
+        <i><img src="https://s3-us-west-2.amazonaws.com/vestedwellness/check-logo.png" alt="Lamp" height="14"></i>
+        Zero in house maintenance or training required
+      </li>
+      <h2>
+        <span id="signup-success" class="badge badge-success"></span>
+        <span id="signup-error" class="badge badge-danger"></span>
+      </h2>
+      <form class="signup-form spacing-bottom spacing-top-med" id="signup-form" role="form" onsubmit="return signup(this)">
+        <div class="form-group">
+          <label for="emailAddress" style="font-size: 24px;">Leave your e-mail and we'll reach out to you!</label>
+          <input class="form-control" id="email" name="email" type="email" placeholder="Your email address" required>
+          <div class="spacing-top-med">
+            <button class="btn btn-info btn-lg" id="signup-button" type="submit" style="min-width:50%">👏  Request a demo!  👏</button>
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone or send spam.</small>
+          </div>
+        </div>
+      </form>
+    </ul>
+    </div>
+  </div>
+</div>
+
+<div class="container spacing-top">
+  <div style="padding-left: 20px; padding-right: 20px;"><div class="divider"></div></div>
+  <div class="row">
+    <ul class="col3" style="padding-right:100px;">
+      <li class="font-blue"><b>vested</b></li>
+      <li><a href="#">Features</a></li>
+      <li><a href="#">App download</a></li>
+      <li><a href="#">Pricing</a></li>
+      <li><a href="#">Enterprise</a></li>
+      <li><a href="#">Security</a></li>
+    </ul>
+    <ul class="col3" style="padding-right: 100px;">
+      <li class="font-blue"><b>About us</b></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Why vested?</a></li>
+      <li><a href="#">Case studies</a></li>
+    </ul>
+    <ul class="col3">
+      <li class="font-blue"><b>Support</b></li>
+      <li><a href="#">Help</a></li>
+      <li><a href="#">Common questions</a></li>
+      <li><a href="#">Privacy and terms</a></li>
+      <li><a href="#">Contact us</a></li>
+    </ul>
+  </div>
+  <div class="py-3" style="padding-left: 20px;">
+    <span style="font-size: 12px; opacity: 0.5;">vested ©2018 &mdash; all rights reserved</span>
+  </div>
+</div>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script src="https://cdn.firebase.com/js/client/1.0.18/firebase.js"></script>
+<script>
+  var signupForm = document.getElementById('signup-form');
+  var signupSuccess = document.getElementById('signup-success');
+  var signupError = document.getElementById('signup-error');
+  var signupBtn = document.getElementById('signup-button');
+  var onSignupComplete = function(error) {
+    signupBtn.disabled = false;
+    if (error) {
+      signupError.innerHTML = 'Hmmm... Something went wrong, reach out to us directly at contact@getvestedapp.com';
+    } else {
+      signupSuccess.innerHTML = 'Thank you! We will be in touch soon...';
+      // hide the form
+      signupForm.style.display = 'none';
+    }
+  };
+  function signup(formObj) {
+    // Store emails to firebase
+    var myFirebaseRef = new Firebase("https://vested-11d32.firebaseio.com/");
+    myFirebaseRef.push({
+      email: formObj.email.value,
+    }, onSignupComplete);
+    signupBtn.disabled = true;
+    return false;
+  }
+</script>
+</body>
+</html>
