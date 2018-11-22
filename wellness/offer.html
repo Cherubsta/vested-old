@@ -43,8 +43,8 @@
           Zero in house maintenance or training required
         </li>
         <h5>
-          <span id="signup-success" class="badge badge-primary" style="padding:16px;"></span>
-          <span id="signup-error" class="badge badge-secondary"></span>
+          <span id="signup-success" class="badge badge-primary" style="padding:15px 5px;"></span>
+          <span id="signup-error" class="badge badge-secondary" style="padding:15px 5px;"></span>
         </h5>
         <form class="signup-form spacing-bottom spacing-top-med" id="signup-form" role="form" onsubmit="return signup(this)">
           <div class="form-group" style="max-width:350px;">
@@ -105,7 +105,7 @@
   var onSignupComplete = function(error) {
     signupBtn.disabled = false;
     if (error) {
-      signupError.innerHTML = 'Hmmm... Something went wrong, reach out to us directly at contact@getvestedapp.com';
+      signupError.innerHTML = 'Something went wrong, contact us contact@getvestedapp.com';
     } else {
       signupSuccess.innerHTML = 'Thank you! We will be in touch soon 👍';
       // hide the form
