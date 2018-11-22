@@ -51,7 +51,7 @@ a:hover {
 } */
 
 ul {
-  font-family: SFProText-Light, "Helvetica neue", Helvetica;
+  /* font-family: SFProText-Light, "Helvetica neue", Helvetica; */
   font-weight: 300;
   list-style: none;
 }
@@ -201,6 +201,10 @@ text-align: left;
   margin-bottom: 1em;
 }
 
+.Sf-font {
+  font-family: SFProText-Light, "Helvetica neue", Helvetica;
+}
+
 /* change color of placeholder */
 /* #signup-form input#email::-webkit-input-placeholder {color:#4984C0; }
 #signup-form input#email::-moz-placeholder          {color:#4984C0; }
@@ -228,9 +232,9 @@ text-align: left;
   /* p {
     font-size: 18px;
   } */
-  ol {
+  /* ol {
     font-size: 18px;
-  }
+  } */
   /* ul {
     min-width: 260px;
     font-size: 12px;

@@ -175,14 +175,12 @@ button:hover .hidden {
   margin-bottom: 1em;
 }
 
-#signup-form input#email::-webkit-input-placeholder {color:#4984C0; }
-#signup-form input#email::-moz-placeholder          {color:#4984C0; }
-#signup-form input#email:-moz-placeholder           {color:#4984C0; }
-#signup-form input#email:-ms-input-placeholder      {color:#4984C0; }
-
+.Sf-font {
+  font-family: SFProText-Light, "Helvetica neue", Helvetica;
+}
 
 @media(max-width: 800px) { /* for devies under 600px width, iPhone 6+ */
-h1 {
+/* h1 {
   font-size: 28px;
   margin-bottom: 24px;
 }
@@ -207,7 +205,7 @@ ul {
   min-width: 260px;
   font-size: 12px;
   column-gap: 35px;
-}
+} */
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
