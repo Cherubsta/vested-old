@@ -12,17 +12,17 @@ body {
 
 h1 {
   font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-  font-size: 36px;
+  font-size: 38px;
   font-style: normal;
   font-variant: normal;
   font-weight: 900;
 }
-h6 {
+/* h6 {
   font-size: 21px;
 }
 p {
   font-size: 16px;
-}
+} */
 
 a {
 color: #4984C0;
@@ -34,6 +34,7 @@ a, a:visited, a:hover, a:active {
 }
 a:hover {
   text-decoration: underline;
+  color: #4984C0;
   /* opacity: 0.5; */
   /*font-weight: bolder;*/
 }
@@ -42,13 +43,12 @@ a:hover {
   opacity: 0.5;
 }
 .btn {
-  background-color: #4984C0;
-  border: 1px #4984C0;
+  font-family: SFProText-Light, "Helvetica neue", Helvetica;
 }
 
-.btn:hover {
+/* .btn:hover, .btn:active {
   background-color: #7474BF;
-}
+} */
 
 ul {
   font-family: SFProText-Light, "Helvetica neue", Helvetica;
@@ -95,7 +95,7 @@ button:hover .hidden {
   padding-top: 1.5em;
 }
 .spacing-bottom {
-  padding-bottom: 70px;
+  padding-bottom: 3em;
 }
 .center {
   display: block;
@@ -209,7 +209,7 @@ text-align: left;
 
 
 @media(max-width: 800px) { /* for devies under 600px width, iPhone 6+ */
-  h1 {
+  /* h1 {
     font-size: 28px;
     margin-bottom: 24px;
   }
@@ -220,14 +220,14 @@ text-align: left;
   h3 {
     font-size: 1.1em;
     margin-top: 0.6em;
-  }
-  h4 {
+  } */
+  /* h4 {
     font-size: 0.9em;
-  }
+  } */
 
-  p {
+  /* p {
     font-size: 18px;
-  }
+  } */
   ol {
     font-size: 18px;
   }
