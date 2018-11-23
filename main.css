@@ -20,15 +20,15 @@ body {
 
 h1 {
   font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-  font-size: 36px;
+  font-size: 38px;
   font-style: normal;
   font-variant: normal;
   font-weight: 900;
 }
 
-p {
+/* p {
   font-size: 16px;
-}
+} */
 a {
   color: #4984C0;
   /* text-decoration: none; */
@@ -38,8 +38,17 @@ a, a:visited, a:hover, a:active {
   text-decoration: none;
 }
 a:hover {
-  opacity: 0.5;
+  text-decoration: underline;
+  color: #4984C0;
+  /* opacity: 0.5; */
   /*font-weight: bolder;*/
+}
+.no-line:hover {
+  text-decoration: none;
+  opacity: 0.5;
+}
+.btn {
+  font-family: SFProText-Light, "Helvetica neue", Helvetica;
 }
 ul {
   font-family: SFProText-Light, "Helvetica neue", Helvetica;
@@ -53,8 +62,7 @@ li {
 .hidden {
   display: none;
 }
-button:hover .visible
-{
+/* button:hover .visible {
   display: none;
 }
 button:hover .hidden {
@@ -63,7 +71,7 @@ button:hover .hidden {
 .hidden, .visible {
   width:40px;
   height:40px;
-}
+} */
 
 .container {
   max-width: 1000px;
@@ -82,6 +90,9 @@ button:hover .hidden {
 }
 .spacing-top-med {
   padding-top: 1.5em;
+}
+.spacing-bottom-med {
+  padding-bottom: 1.5em;
 }
 .spacing-bottom {
   padding-bottom: 3em;

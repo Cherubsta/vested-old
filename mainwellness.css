@@ -10,6 +10,19 @@ body {
     margin: 0 !important; */
 }
 
+.font-quote {
+  font-family: SFProText-Light, "Helvetica neue", Helvetica;
+  font-size: 12px;
+}
+.font-blue {
+  color: #4984C0;
+  font-weight: bold;
+}
+.font-lt {
+  color: #FFFFFF;
+  opacity: 0.5;
+}
+
 h1 {
   font-family: Futura, "Trebuchet MS", Arial, sans-serif;
   font-size: 38px;
@@ -58,6 +71,11 @@ ul {
 li {
   padding-bottom: .6em;
 }
+li.leaf {
+  background: url('https://s3-us-west-2.amazonaws.com/vestedwellness/check-logo.png') no-repeat left 5px;
+  background-size: 20px;
+  padding-left: 24px;
+}
 
 .hidden {
   display: none;
@@ -88,6 +106,7 @@ button:hover .hidden {
   padding-bottom: 2em;
   width: 90%;
 }
+
 .spacing-top {
   padding-top: 10em;
 }
@@ -97,6 +116,10 @@ button:hover .hidden {
 .spacing-bottom {
   padding-bottom: 3em;
 }
+.spacing-bottom-med {
+  padding-bottom: 1.5em;
+}
+
 .center {
   display: block;
   margin-left: auto;
@@ -104,19 +127,6 @@ button:hover .hidden {
 }
 .div-aligntext {
 text-align: left;
-}
-
-.font-quote {
-  font-family: SFProText-Light, "Helvetica neue", Helvetica;
-  font-size: 12px;
-}
-.font-blue {
-  color: #4984C0;
-  font-weight: bold;
-}
-.font-lt {
-  color: #FFFFFF;
-  opacity: 0.5;
 }
 
 .faq-answer {
