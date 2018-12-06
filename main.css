@@ -10,7 +10,7 @@ body {
 }
 
 .font-blue {
-  color: #4984C0;
+  color: #459DF8;
   font-weight: bold;
 }
 .font-lt {
@@ -25,12 +25,8 @@ h1 {
   font-variant: normal;
   font-weight: 900;
 }
-
-/* p {
-  font-size: 16px;
-} */
 a {
-  color: #4984C0;
+  color: #459DF8;
   /* text-decoration: none; */
 }
 a, a:visited, a:hover, a:active {
@@ -39,7 +35,7 @@ a, a:visited, a:hover, a:active {
 }
 a:hover {
   text-decoration: underline;
-  color: #4984C0;
+  color: #459DF8;
   /* opacity: 0.5; */
   /*font-weight: bolder;*/
 }
@@ -120,7 +116,7 @@ button:hover .hidden {
 }
 
 .img-heading {
-  height: 3em;
+  height: 2.6em;
   background-color: #FFF;
   background-size: contain;
   opacity: 0.98;
@@ -180,7 +176,7 @@ button:hover .hidden {
 }
 
 .divider {
-  background-color: #4984C0;
+  background-color: #459DF8;
   height: 1px;
   display: block;
   margin-bottom: 1em;
