@@ -23,13 +23,13 @@ body {
   opacity: 0.5;
 }
 
-/* h1 {
-  /* font-family: Futura, "Trebuchet MS", Arial, sans-serif; */
+  /* h1 {
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
   font-size: 38px;
   font-style: normal;
   font-variant: normal;
   font-weight: 900;
-} */
+}*/
 
 a {
 color: #459DF8;
@@ -55,6 +55,7 @@ a:hover {
 
 p {
   padding: 0px 20px;
+  font-size: 1.1rem;
 }
 
 .btn-light {
