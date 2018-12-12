@@ -1,8 +1,8 @@
 body {
-  /* background-color:#FFFFFF; */
+  background-color:#F1F1F1;
   /* background-image: repeating-linear-gradient(); */
   color: #4A4A4A;
-  font-family: "Helvetica neue", Helvetica, SFProText-Light, "Trebuchet MS", Arial, sans-serif;
+  font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
   scroll-behavior: smooth;
   /* overflow-x: hidden;
   width: 100%;
@@ -31,6 +31,11 @@ body {
   font-weight: 900;
 }*/
 
+h6 {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
 a {
 color: #459DF8;
   /* text-decoration: none; */
@@ -55,7 +60,8 @@ a:hover {
 
 p {
   padding: 0px 20px;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
+  font-weight: 400;
 }
 
 .btn-light {
