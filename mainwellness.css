@@ -1,54 +1,37 @@
 body {
   background-color:#F1F1F1;
-  /* background-image: repeating-linear-gradient(); */
-  color: #4A4A4A;
+  color: #333333;
   font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
   scroll-behavior: smooth;
-  /* overflow-x: hidden;
-  width: 100%;
-  padding: 0 !important;
-    margin: 0 !important; */
 }
 
 .font-quote {
-  /* font-family: SFProText-Light, "Helvetica neue", Helvetica; */
   font-size: 12px;
 }
 .font-blue {
   color: #459DF8;
   font-weight: bold;
 }
-.font-lt {
-  color: #FFFFFF;
-  opacity: 0.5;
+
+p {
+  padding: 0px 20px;
+  font-size: 1.4rem;
+  font-weight: 400;
 }
-
-  /* h1 {
-  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-  font-size: 38px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 900;
-}*/
-
 h6 {
   font-size: 1.2rem;
   font-weight: 400;
 }
 
 a {
-color: #459DF8;
-  /* text-decoration: none; */
+  color: #459DF8;
 }
 a, a:visited, a:hover, a:active {
-  /* color: #FFED7D; */
   text-decoration: none;
 }
 a:hover {
   text-decoration: underline;
   color: #459DF8;
-  /* opacity: 0.5; */
-  /*font-weight: bolder;*/
 }
 .no-line {
   color: #459DF8;
@@ -58,23 +41,7 @@ a:hover {
   opacity: 0.5;
 }
 
-p {
-  padding: 0px 20px;
-  font-size: 1.4rem;
-  font-weight: 400;
-}
-
-.btn-light {
-  /* font-family: SFProText-Light, "Helvetica neue", Helvetica; */
-  color: #459DF8;
-}
-
-.btn-light:hover, .btn-light:active {
-  color: #459DF8;
-}
-
 ul {
-  /* font-family: SFProText-Light, "Helvetica neue", Helvetica; */
   font-weight: 300;
   list-style: none;
 }
@@ -91,23 +58,10 @@ li.leaf {
   display: none;
 }
 
-/* button:hover .visible
-{
-  display: none;
-}
-button:hover .hidden {
-  display: block;
-}
-.hidden, .visible {
-  width:40px;
-  height:40px;
-} */
-
 .container {
   max-width: 1000px;
-  /* margin: 0 auto;
-  text-align: center; */
 }
+
 .shadowbox {
   background: #FCFCFC;
   box-shadow: 0 2px 11px 0 rgba(0,0,0,0.50);
@@ -117,6 +71,15 @@ button:hover .hidden {
   padding-left: 1em;
   padding-right: 1em;
   /* width: 90%; */
+}
+
+.btn-light {
+  color: #459DF8;
+  font-weight: 500;
+}
+
+.btn-light:hover, .btn-light:active {
+  color: #459DF8;
 }
 
 .spacing-top {
@@ -137,17 +100,6 @@ button:hover .hidden {
   margin-left: auto;
   margin-right: auto;
 }
-.div-aligntext {
-text-align: left;
-}
-
-.faq-answer {
-  display: block;
-  background-color: #FFF;
-  padding: 2em 1em;
-  border-radius: 40px 40px 40px 5px;
-  margin-bottom: 3em;
-}
 
 .img-heading {
   height: 3em;
@@ -158,50 +110,6 @@ text-align: left;
   background-size: contain; */
   opacity: 0.98;
   margin-bottom: 2em;
-}
-.img-icons {
-  height: 3em;
-  padding-top: 6em;
-  background-image: url(https://s3-us-west-2.amazonaws.com/vested/icons.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center;
-  opacity: 0.5;
-}
-.img-icons-mobile {
-  height: 3em;
-  padding-top: 6em;
-  background-image: url(https://s3-us-west-2.amazonaws.com/vested/icons-mobile.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center;
-  opacity: 0.5;
-}
-
-.hero {
-  margin-top: -10px;
-  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-  font-size: 42px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 900;
-}
-
-.hero-rotate {
-  margin-top: 2em;
-  padding-top: 2em;
-  font-size: 36px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 900;
-}
-.hero-rotate-small {
-  margin-top: 2em;
-  padding-top: 2em;
-  font-size: 24px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 900;
 }
 
 .quote {
@@ -228,7 +136,7 @@ text-align: left;
 #signup-form input#email:-ms-input-placeholder      {color:#4984C0; } */
 
 
-@media(max-width: 800px) { /* for devies under 600px width, iPhone 6+ */
+/* @media(max-width: 800px) { /* for devies under 600px width, iPhone 6+ */
   /* h1 {
     font-size: 28px;
     margin-bottom: 24px;
@@ -255,8 +163,8 @@ text-align: left;
     min-width: 260px;
     font-size: 12px;
     column-gap: 35px;
-    } */
-}
+    }
+} */
 /* Landscape phones and portrait tablets */
 /* @media (max-width: 767px) {
 body { */
