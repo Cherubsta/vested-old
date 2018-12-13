@@ -9,7 +9,7 @@ body {
   font-size: 12px;
 }
 .font-blue {
-  color: #459DF8;
+  color: #7EA6F4;
   font-weight: bold;
 }
 
@@ -24,17 +24,17 @@ h6 {
 }
 
 a {
-  color: #459DF8;
+  color: #7EA6F4;
 }
 a, a:visited, a:hover, a:active {
   text-decoration: none;
 }
 a:hover {
   text-decoration: underline;
-  color: #459DF8;
+  color: #7EA6F4;
 }
 .no-line {
-  color: #459DF8;
+  color: #7EA6F4;
 }
 .no-line:hover {
   text-decoration: none;
@@ -74,12 +74,12 @@ li.leaf {
 }
 
 .btn-light {
-  color: #459DF8;
+  color: #7EA6F4;
   font-weight: 500;
 }
 
 .btn-light:hover, .btn-light:active {
-  color: #459DF8;
+  color: #7EA6F4;
 }
 
 .spacing-top {
@@ -103,7 +103,7 @@ li.leaf {
 
 .img-heading {
   height: 3em;
-  background-color: #459DF8;
+  background-color: #7EA6F4;
   display: block;
   /* background-image: url(https://s3-us-west-2.amazonaws.com/vestedwellness/background-header.png);
   background-repeat: repeat-x;
@@ -123,7 +123,7 @@ li.leaf {
   line-height: 1.3;
 }
 .divider {
-  background-color: #459DF8;
+  background-color: #7EA6F4;
   height: 1px;
   display: block;
   margin-bottom: 1em;
