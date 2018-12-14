@@ -80,15 +80,22 @@ li.leaf {
 .btn-light:hover, .btn-light:active {
   color: #7EA6F4;
 }
-
 .btn-outline-primary {
   color: #7EA6F4;
   border-color: #7EA6F4;
 }
-
 .btn-outline-primary:hover, .btn-outline-primary:active {
   background-color: #7EA6F4;
   border-color: #7EA6F4;
+}
+.btn-lg {
+  background-color: #7EA6F4;
+  border: none;
+}
+.btn-lg:hover {
+  background-color: #7EA6F4;
+  border: none;
+  opacity: 0.8;
 }
 
 .spacing-top {
