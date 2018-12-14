@@ -77,9 +77,18 @@ li.leaf {
   color: #7EA6F4;
   font-weight: 500;
 }
-
 .btn-light:hover, .btn-light:active {
   color: #7EA6F4;
+}
+
+.btn-outline-primary {
+  color: #7EA6F4;
+  border-color: #7EA6F4;
+}
+
+.btn-outline-primary:hover, .btn-outline-primary:active {
+  background-color: #7EA6F4;
+  border-color: #7EA6F4;
 }
 
 .spacing-top {
