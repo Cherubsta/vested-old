@@ -8,15 +8,17 @@
   <meta name="keywords" content="financial savings, wellness, investment, save money, savings goal, savings plan">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="mainwellness.css">
+  <link rel="stylesheet" type="text/css" href="main.css">
   <link rel="shortcut icon" href="https://s3-us-west-2.amazonaws.com/vested/favicon.png">
   <title>vested wellness</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
 <div class="img-heading sticky-top">
   <div class="container">
     <div style="padding-top: 8px;">
-      <img src="https://s3-us-west-2.amazonaws.com/vestedwellness/logo-vested.png" alt="Lamp" height="22">
+      <a href="#"><img src="https://s3-us-west-2.amazonaws.com/vestedwellness/logo-vested.png" alt="Lamp" height="22"></a>
       <a role="button" href="wellness/offer.html" class="btn btn-light btn-sm float-right">Request a demo 👋</a>
     </div>
   </div>
@@ -25,7 +27,7 @@
 <div class="container">
   <div class="row justify-content-center spacing-bottom-med">
     <div class="col">
-      <h1 class="text-center center">Financial wellness for a healthy workplace</h1>
+      <h1 class="text-center center">Financial wellness for your workplace</h1>
     </div>
   </div>
   <div class="row justify-content-center">
@@ -35,7 +37,7 @@
     <div class="d-md-none d-lg-none d-xl-none">
       <img style="width: 100%; overflow: hidden;" src="https://s3-us-west-2.amazonaws.com/vestedwellness/colleagues.svg" alt="Lamp">
     </div>
-    <p class="text-center spacing-top-med" style="max-width: 740px;">A wellness benefits solution to encourage financial health at the workplace, vested empowers employees to overcome stressful debt and set savings goals for the things that matter.</p>
+    <p class="text-center spacing-top-med" style="max-width: 550px; padding: 20px 10px;">A wellness benefits solution to encourage financial health at the workplace, vested empowers employees to overcome stressful debt and set savings goals for the things that matter.</p>
   </div>
   <div class="row justify-content-center spacing-top-med spacing-bottom">
     <div class="col text-center">
@@ -47,29 +49,27 @@
 
   <div class="shadowbox">
     <div class="row justify-content-center">
-      <div class="col center">
-        <h2 class="text-center center">A simple and rewarding experience</h2>
-        <div class="row justify-content-center">
-          <div class="col center text-center spacing-top-med">
-            <img src="https://s3-us-west-2.amazonaws.com/vestedwellness/iphone-goals.png" alt="Lamp" height="364">
-            <h4 class="spacing-top-med">Savings tailored to you</h4>
-            <h6>Smart recommendations for goals that are within reach</h6>
-          </div>
-          <div class="col center text-center spacing-top-med">
-            <img src="https://s3-us-west-2.amazonaws.com/vestedwellness/iphone-goal.png" alt="Lamp" height="364">
-            <h4 class="spacing-top-med">Motivation to save</h4>
-            <h6>Simply close the monthly savings rings to stay on track</h6>
-          </div>
-          <div class="col center text-center spacing-top-med">
-            <img src="https://s3-us-west-2.amazonaws.com/vestedwellness/iphone-rewards.png" alt="Lamp" height="364">
-            <h4 class="spacing-top-med">Rewarded acheivements</h4>
-            <h6>Reach savings milestones and earn instant rewards</h6>
-          </div>
+      <h2 class="text-center center">A rewarding app experience</h2>
+      <div class="row justify-content-center">
+        <div class="col text-center spacing-top-med">
+          <img class="img-fluid" src="https://s3-us-west-2.amazonaws.com/vestedwellness/iphone-goals.png" alt="Lamp" style="min-width: 185px">
+          <h4 class="spacing-top-med">Savings tailored to you</h4>
+          <p class="center" style="max-width: 280px">Smart recommendations for goals that are within reach</p>
         </div>
-        <div class="row justify-content-center" style="padding-top: 1.5em" >
-          <div class="col center text-center">
-            <a role="button" href="http://getvestedapp.com" class="btn btn-primary btn-outline-primary" target="_blank">Learn more about out the app 📱</a>
-          </div>
+        <div class="col text-center spacing-top-med">
+          <img class="img-fluid" src="https://s3-us-west-2.amazonaws.com/vestedwellness/iphone-goal.png" alt="Lamp" style="min-width: 185px">
+          <h4 class="spacing-top-med">Motivation to save</h4>
+          <p class="center" style="max-width: 280px">Simply close the monthly savings rings to stay on track</p>
+        </div>
+        <div class="col text-center spacing-top-med">
+          <img class="img-fluid" src="https://s3-us-west-2.amazonaws.com/vestedwellness/iphone-rewards.png" alt="Lamp" style="min-width: 185px">
+          <h4 class="spacing-top-med">Rewarded acheivements</h4>
+          <p class="center" style="max-width: 280px">Reach savings milestones and earn instant rewards</p>
+        </div>
+      </div>
+      <div class="row justify-content-center" style="padding-top: 1.5em" >
+        <div class="col center text-center spacing-bottom-med">
+          <a role="button" href="index.html" class="btn btn-primary btn-outline-primary" target="_blank">Learn more about out the app 📱</a>
         </div>
       </div>
     </div>
@@ -83,7 +83,7 @@
       <img style="width: 100%; overflow: hidden;" src="https://s3-us-west-2.amazonaws.com/vestedwellness/colleagues2.svg" alt="Lamp">
     </div>
     <div>
-      <h2 class="text-center center spacing-top-med">Deliver benefits that work for everyone</h2>
+      <h2 class="text-center center spacing-top-med">Benefits that work for everyone</h2>
       <p class="text-center" style="max-width: 740px; font-weight: 300;">A complimentary way to pay off student loans, start an emergency fund, and save towards long-term goals such as travel, purchasing a home, and starting a family. Large or small companies will benefit from a healthier work atmosphere, and happier and more motivated employees.
       </p>
     </div>
@@ -108,7 +108,7 @@
 
   <div class="row justify-content-center spacing-top">
     <div class="container">
-      <h2 class="text-center center">The cost of financial workplace stress</h2>
+      <h2 class="text-center center">The cost of workplace stress</h2>
       <div class="row justify-content-center spacing-top-med">
         <div class="spacing-bottom-med">
           <img style="width: 90%; padding:0px 20px 0px 30px" src="https://s3-us-west-2.amazonaws.com/vestedwellness/colleagues3.svg" alt="Lamp">
@@ -136,6 +136,7 @@
           <img src="https://s3-us-west-2.amazonaws.com/vestedwellness/icon-shield.png" alt="Lamp" height="110" class="spacing-bottom-med">
           <h4>Commitment to privacy and security</h4>
           <p class="center" style="max-width: 740px; font-weight: 300;">We value safeguarding our members' privacy&mdash;employers never have access to personal or financial data. We work with reputable partners to offer bank-level security. We never share or sell data to anyone for any reason.</p>
+          <a class="no-line" href="security.html">Learn more</a>
         </div>
       </div>
     </div>
@@ -146,29 +147,45 @@
     <div class="row">
       <ul style="padding-right:100px; margin-left: -20px;">
         <li class="font-blue"><b>vested</b></li>
-        <li><a href="#">App download</a></li>
-        <li><a href="wellness/about.html">About us</a></li>
-        <li><a href="#">Enterprise</a></li>
-        <li><a href="#">Case studies</a></li>
-        <li><a href="#">Security</a></li>
+        <li><a href="index.html">App download</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="wellness/offer.html">Enterprise</a></li>
+        <li><a href="cases.html">Case studies</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#exampleModal">Contact us</a></li>
       </ul>
       <ul style="padding-right: 100px; margin-left: -20px;">
-        <li class="font-blue"><b>Support</b></li>
-        <li><a href="#">Common questions</a></li>
-        <li><a href="#">Privacy and terms</a></li>
-        <li><a href="#">Contact us</a></li>
+        <li class="font-blue"><b>support</b></li>
+        <li><a href="faq.html">Common questions</a></li>
+        <li><a href="security.html">Security</a></li>
+        <li><a href="terms.html">Terms</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
       </ul>
     </div>
-    <!-- <div class="py-3">
-      <span style="font-size: 12px; opacity: 0.5;">vested ©2018 &mdash; all rights reserved</span>
-      <ol style="font-size: 12px; opacity: 0.5; margin-left:-20px;">
-        <li style="padding-bottom:0px">Reference one and date</li>
-        <li style="padding-bottom:0px">Reference one and date</li>
-        <li style="padding-bottom:0px">Reference one and date</li>
-      </ol>
-    </div> -->
+
+    <!-- Modal -->
+    <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Contact Us</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Reach out to us via email: <a href="mailto:contact@getvestedapp.com">contact@getvestedapp.com<a/></p>
+            <div class="divider"></div>
+            <p>Or give us a call: <a href="#">804-564-7985</a></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="py-3">
-      <span style="font-size: 12px; opacity: 0.5;">vested ©2018 &mdash; all rights reserved</span>
+      <span style="font-size: 12px; opacity: 0.5;">©2018 <em>vested</em> Inc. All rights reserved.</span>
       <div style="font-size: 8px; opacity: 0.5;">
         Sources: <sup>1</sup>Price Waterhouse Cooper, Employee Financial Wellness Survey, 2018 <sup>2</sup>Price Waterhouse Cooper, Employee Financial Wellness Survey, 2017
       </div>
