@@ -20,11 +20,16 @@ body {
 }
 
 p {
-  /* padding: 0px 20px; */
   font-size: 1.2rem;
   font-weight: 300;
 }
-
+h6 {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+h4 {
+  font-weight: 400;
+}
 a {
   color: #7EA6F4;
 }
@@ -54,15 +59,6 @@ li.leaf {
   background: url('https://s3-us-west-2.amazonaws.com/vestedwellness/check-logo.png') no-repeat left 5px;
   background-size: 20px;
   padding-left: 24px;
-}
-
-h6 {
-  font-size: 1.2rem;
-  font-weight: 400;
-}
-
-h4 {
-  font-weight: 300;
 }
 
 .hidden {
