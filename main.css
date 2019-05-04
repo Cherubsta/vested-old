@@ -61,12 +61,12 @@ li.leaf {
   background-size: 14px;
   padding-left: 24px;
 }
-sup {
+sup-v {
   position: relative;
   font-size: 40%;
   line-height: 0;
   vertical-align: baseline;
-  top: -0.9em;
+  top: -1em;
 }
 .hidden {
   display: none;
