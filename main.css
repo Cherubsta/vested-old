@@ -16,10 +16,11 @@ body {
 }
 .font-blue {
   color: #7EA6F4;
-  font-weight: bold;
 }
-.font-blue-dk {
-  color: #4A4DE7;
+.font-grey {
+  color: #333333;
+}
+.font-bold {
   font-weight: bold;
 }
 
@@ -46,7 +47,7 @@ a, a:visited, a:hover, a:active {
   /* box-shadow: none; */
 }
 a:hover {
-  text-decoration: underline;
+  /* text-decoration: underline; */
   color: #7EA6F4;
 }
 .no-line {
