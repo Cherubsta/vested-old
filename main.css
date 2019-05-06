@@ -23,6 +23,9 @@ body {
 .font-bold {
   font-weight: bold;
 }
+.font-stat {
+  font-size: 60px;
+}
 
 p {
   font-size: 1.2rem;
@@ -30,7 +33,7 @@ p {
 }
 h1, h2 {
   color: #4A4DE7;
-  font-family: 'Baloo', cursive;
+  font-family: "Baloo","SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 h4 {
   font-weight: 400;
