@@ -25,6 +25,7 @@ body {
 }
 .font-stat {
   font-size: 60px;
+  font-weight: bold;
 }
 
 p {
