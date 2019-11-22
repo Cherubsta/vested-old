@@ -98,7 +98,7 @@ sup-v {
   box-shadow: 0 2px 11px 0 rgba(0,0,0,0.50);
   border-radius: 10px;
   padding: 20px 40px;
-  max-width: 80%;
+  /* max-width: 87%; */
 }
 
 .modal-backdrop {
