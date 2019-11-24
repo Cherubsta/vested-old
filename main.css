@@ -257,7 +257,7 @@ sup-v {
 @media(max-width: 800px) { /* for devies under 600px width, iPhone 6+ */
   h1 {
     font-family: "Merriweather";
-    font-size: 2.4rem;
+    font-size: 2.0rem;
     line-height: 1.3;
   }
   /*
