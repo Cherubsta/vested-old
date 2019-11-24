@@ -1,7 +1,7 @@
 body {
   background-color:#F1F1F1;
   color: #404266;
-  font-family: "Lato","Merriweather","SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-family: "Lato", "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -32,7 +32,6 @@ p {
   font-size: 1.3rem;
 }
 h1 {
-  font-family: "Merriweather";
   font-size: 3rem;
   line-height: 1.3;
 }
