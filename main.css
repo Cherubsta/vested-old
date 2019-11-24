@@ -1,7 +1,7 @@
 body {
   background-color:#F1F1F1;
   color: #404266;
-  font-family: "Lato","SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-family: "Lato","Merriweather","SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -32,7 +32,7 @@ p {
   font-size: 1.3rem;
 }
 h1 {
-  font-family: "Merriweather", "Lato","SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-family: "Merriweather";
   font-size: 3rem;
   line-height: 1.3;
 }
@@ -257,7 +257,7 @@ sup-v {
 
 @media(max-width: 800px) { /* for devies under 600px width, iPhone 6+ */
   h1 {
-    font-family: "Merriweather", "Lato","SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-family: "Merriweather";
     font-size: 2.4rem;
     line-height: 1.3;
   }
