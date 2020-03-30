@@ -27,6 +27,10 @@ a:hover {
   color: #7EA6F4;
 }
 
+.navbar {
+  padding: 0.1rem;
+}
+
 .navbar-toggler-icon {
   font-size: 0.8em;
 }
