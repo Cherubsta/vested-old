@@ -27,6 +27,17 @@ a:hover {
   color: #7EA6F4;
 }
 
+.navbar-toggler-icon {
+  font-size: 0.8em;
+}
+
+@media (max-width: 767px) {
+  .navbar-toggler {
+    border: none;
+    outline: none;
+  }
+}
+
 .center {
   display: block;
   margin-left: auto;
