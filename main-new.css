@@ -54,7 +54,8 @@ a:hover {
 }
 
 .android {
-  font-size: 10px;
+  font-size: 11px;
   margin-top: 1rem;
   font-weight: bold;
+  letter-spacing: -1px;
 }
